@@ -1,0 +1,144 @@
+//$ sass --watch scss/index.scss:css/style.css
+//@import "../common/index";
+
+.header {
+    border: 1px solid black;
+    height: $header-height;
+    position: relative;
+
+    background-image: url('/img/header/images/photodune-3598715-woman-in-red-m.webp');
+    background-repeat: no-repeat;
+
+    //overlay
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+   
+
+    //menu
+
+    &__menu-block {
+        background-color: $black;
+
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+
+    &__menu {
+        position: relative;
+        margin-left: auto;  
+    }
+
+    &__menu-list {
+        list-style-type: $reset-styles;
+        color: $white;
+
+        //position: relative;
+
+        @extend %uppercase-regular;
+        @extend %flex-row;
+        
+        li {
+            @include margin-loop(right, 1, 8, 30px);
+        } 
+    }
+
+    //logo
+
+    &__logo {
+        position: absolute;
+        z-index: 2;
+
+        .header__logo-name {
+            position: absolute;
+            left: 66px;
+            top: 36px;
+        }
+    }
+
+
+    //text
+    .text-content {
+        @extend %regular-text-content;
+        color: $white;
+        text-align: center;
+    }
+
+
+    //title
+    
+    .title {
+        @include diff-color-title($white, $red);
+    }
+
+//header buttons    
+
+    &__form {
+        margin-top: 51px;
+    }
+
+    &__button {
+        @include sizes(170px, 52px);
+        border: $transparent;
+    }
+
+
+    &__button:first-child {
+            @include button-style($red, 20px);
+            @include margin(0, 15px, 0, 0);
+    }
+    &__button:nth-of-type(2) {
+            @include button-style($black, 20px);
+            @include margin(0, 0, 0, 15px);
+    }
+
+
+//выравнивание
+
+    .content__wrapper {
+        // @extend %content-wrapper;
+
+        .header__menu-block {
+            border: 1px solid white;
+        }
+
+        //arrows
+            &::after {
+                @include pseudo_elem(url('/img/header/shapes/arrow-left (1).svg'),17px,28px);
+                top: 348px;
+                left: -62px;
+            }
+    
+            &::before {
+                @include pseudo_elem(url('/img/header/shapes/arrow-right (1).svg'),17px,28px);
+                top: 348px;
+                right: -62px;    
+    }
+}
+
+    &__text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        border: 1px solid white;
+        @include margin(0, 65px, 0, 65px);
+          
+        position: absolute;
+        top: 50%;
+        transform: translateY(-40%);
+
+        .text-content {
+            margin-top: 46px;
+        }
+    }
+}

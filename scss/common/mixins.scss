@@ -1,0 +1,83 @@
+@mixin word-color($color) {
+    color: $color;
+}
+
+@mixin button-style($bgc, $font-size) {
+    background-color: $bgc;
+    font-size: $font-size;
+
+    @extend %button-text;
+}
+
+//text
+
+@mixin diff-color-title ($first-clr, $second-clr) {
+    .first-word {
+        color: $first-clr;
+    }
+
+    .second-word {
+        color: $second-clr;
+    }
+}
+
+@mixin bold-reg-text-color($color) {
+    @extend %bold-text-content;
+    color: $color;
+}
+
+@mixin section-title-style($color, $case) {
+    @extend %section-title-medium;
+    color: $color;
+    text-transform: $case;
+}
+
+//paddings & margins
+
+@mixin margin($top, $right, $bottom, $left) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+@mixin padding($top, $right, $bottom, $left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+
+//margin-loop-to
+
+@mixin margin-loop ($type, $first, $second, $value) {
+    @for $i from $first to $second {
+        &:nth-of-type(#{$i}) {
+            margin-#{$type}: $value;
+        }
+    }
+}
+
+//width & height 
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+//transformations
+
+@mixin transform($axis, $value) {
+    transform: translate#{$axis}($value);
+}
+
+//pseudo-elements
+
+@mixin pseudo_elem($bgi, $width, $height) {
+    @extend %pseudo;
+
+    background-image: $bgi;
+    width: $width;
+    height: $height;
+}

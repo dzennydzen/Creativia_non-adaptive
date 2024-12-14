@@ -1,0 +1,83 @@
+.clients__section {  
+    background-image: url('/img/main/clients/images/photodune-3414776-business-group-m.webp');
+    background-repeat: no-repeat;
+}
+
+
+.img-box {
+    display: flex;
+}
+
+
+// .container {
+//     border: 1px solid red;
+   
+//     // height: 271px;
+    
+    
+//     .text-content-box {
+        
+//         width: 55%;
+
+//         .inner-section__title__big {
+//             color: $white;
+//         }
+
+//         .text-content {
+//             text-align: $text-center;
+//         }
+//     }
+
+//     .img-content {
+//         @extend %flex-column;
+//         @extend %flex-alignment;
+
+//         .inner-section__title__small {
+//             @extend %small-title-bold;
+//             color: $red;
+
+//             @include margin(17px, 0, 26px, 0);
+//         }
+//     }
+
+//     .text-content-box {
+//         width: 55%;
+
+//         .inner-section__title__big {
+//             margin-bottom: 50px;
+//         }
+
+//         .inner-section__title__small {
+//             @extend %small-title-bold;
+//             color: $red;
+
+//             margin-top: 17px;  
+//         }
+
+//         .decorative__elem {
+//             display: inline-block;
+            
+//         }
+//     }
+
+//     .img-content {
+//         border:1px solid orange;
+//         margin-top: 50px;
+//         max-height: 123px;
+//         box-sizing: border-box;
+//     }
+
+//     .test {
+//         display: flex;
+//     }
+
+//     .img-content-box {
+//         margin-left: 30px;
+//         width: 50%;
+        
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+        
+//     }
+// }

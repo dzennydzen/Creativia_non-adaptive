@@ -1,0 +1,102 @@
+//content-wrapper
+
+%content-wrapper {
+    border: 2px solid red;
+
+    max-width: $content-width;
+    height: $hundred-percent;
+
+    margin: $center-margin;
+
+    @extend %flex-column;
+
+    position: relative;
+}
+
+
+//fonts
+%uppercase-regular {
+    text-transform: $uppercase;
+    font-family: $regular-header-font;
+}
+
+%regular-text-content {
+    font-family: $regular-text-font;
+    font-size: $regular-font-size;
+}
+
+%bold-text-content {
+    font-family: $bold-text-font;
+    font-size: $regular-font-size;
+}
+
+%title-bold {
+    font-family: $bold-header-font;
+    font-size: $regular-title-size;
+    text-align: $text-center;
+}
+
+%small-title-bold {
+    font-family: $bold-header-font;
+    font-size: $regular-font-size;
+    text-transform: $uppercase;
+}
+
+%section-title-medium {
+    font-family: $medium-header-font;
+    font-size: $medium-section-title-size;
+}
+
+//buttons
+
+%button-text {
+    text-transform: $uppercase;
+    color: $white;
+    font-family: $medium-header-font;
+}
+
+//pseudo-elements
+
+%pseudo {
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+//flex
+
+%flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+%flex-alignment {
+    justify-content: center;
+    align-items: center;
+}
+
+//specific
+
+%hexagon-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 3px;
+    width: $hundred-percent;
+    height: $hundred-percent;
+    background-color: rgba(0, 0, 0, 0.6);     
+                        
+    clip-path: polygon(
+        0% 44%, 
+        25% 0%, 
+        75% 0%, 
+        100% 43%,
+        75% 87%,
+        25% 87%,
+    )
+}

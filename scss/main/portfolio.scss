@@ -1,0 +1,34 @@
+.portfolio__section {
+    background-color: $raisin-black;
+
+    .title {
+        color: $white;
+    }
+
+    .bold-text-content {
+       margin-top: 23px;
+    }
+
+    &__list {
+        list-style-type: $reset-styles;
+
+        @extend %uppercase-regular;
+        @extend %flex-row;
+        @extend %flex-alignment;
+
+
+        .portfolio__link {
+            @include bold-reg-text-color($dark-grey);
+            @include margin-loop(right, 1, 5, 23px);
+        }
+    } 
+
+
+    &-gallery {
+        @extend %flex-row;
+        @extend %flex-alignment;
+
+        flex-wrap: wrap;
+    }
+
+}

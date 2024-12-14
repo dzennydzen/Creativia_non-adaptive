@@ -1,0 +1,90 @@
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'extends';
+
+.body {
+    margin: $reset-margin;
+    position: relative;
+
+    .common__padding {
+        @include padding(100px,0,100px,0);
+    }
+
+    //content area
+    .content__wrapper  {
+        @extend %content-wrapper;
+    }
+
+    &__wrapper {
+        max-width: $desktop;
+        margin: $center-margin;
+
+        border: 2px solid red;
+    }
+
+    //titles
+    .red-word {
+        @include word-color($red);
+    }
+
+    .title {
+       @extend %title-bold;
+       margin: $reset-margin;
+    }
+
+    .inner-section__title {
+        @include section-title-style($black, none);
+        font-weight: normal;
+        border: 1px solid black;
+    }
+
+    .inner-section__title__big {
+        @extend .inner-section__title;
+        text-transform: $uppercase;
+    }
+
+    //text
+
+    .bold-text-content {
+        @include bold-reg-text-color($most-dark-grey);
+       text-align: $text-center;
+       margin-top: 48px;
+       margin-bottom: 100px;
+    }
+
+    .text-content {
+        @extend %regular-text-content;
+    }
+
+    //inner section containers
+    .container {
+        @extend %flex-row;
+    }
+
+    .container-2 {
+
+        .benefit-box {
+            @extend %flex-column;
+            @extend %flex-alignment;
+
+            .text-content {
+                text-align: $text-center;
+            }
+        }
+    }
+
+    //links
+
+    .link {
+        text-decoration: none;
+    }
+    
+}
+
+main {
+    .wrapper {
+        @include padding(103px, 0, 103px, 0);
+    } 
+}
+
