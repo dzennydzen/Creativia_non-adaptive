@@ -3,13 +3,18 @@
     background-repeat: no-repeat;
     height: 652px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     .title {
         @include diff-color-title($white, $red);
     }
 
     .content__wrapper {
         height: auto;
-        border: 5px solid black;
+        border: 1px solid black;
+
     }
 
     .container {
