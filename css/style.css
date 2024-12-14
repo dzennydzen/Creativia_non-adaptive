@@ -28,10 +28,9 @@
   font-weight: bold;
   font-style: normal;
 }
-.body .content__wrapper {
+.clients__section .content__wrapper, .header .content__wrapper, .body .content__wrapper {
   border: 2px solid red;
   max-width: 1170px;
-  height: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -57,7 +56,7 @@
   text-align: center;
 }
 
-.clients__section .text-content-box .img-content .inner-section__title__small {
+.clients__section .container .text-content-box .img-content .inner-section__title__small {
   font-family: "Raleway_bold", serif;
   font-size: 16px;
   text-transform: uppercase;
@@ -80,17 +79,17 @@
   position: absolute;
 }
 
-.product-features__section .container .product-features__tabs .product-features__tab, .product-features__section .container, .portfolio__section-gallery, .portfolio__section__list, .about__section .img-box .img-box__wrapper, .header__menu-list, .body .container {
+.clients__section .container .img-content-box .img-box, .clients__section, .product-features__section .container .product-features__tabs .product-features__tab, .product-features__section .container, .portfolio__section-gallery, .portfolio__section__list, .about__section .img-box .img-box__wrapper, .header__menu-list, .body .container {
   display: flex;
   flex-direction: row;
 }
 
-.clients__section .text-content-box .img-content, .clients__section .text-content-box, .body .container-2 .benefit-box, .body .content__wrapper {
+.clients__section .container .img-content-box, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .body .container-2 .benefit-box, .clients__section .content__wrapper, .header .content__wrapper, .body .content__wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.clients__section .text-content-box .img-content, .portfolio__section-gallery, .portfolio__section__list, .body .container-2 .benefit-box {
+.clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .clients__section, .portfolio__section-gallery, .portfolio__section__list, .body .container-2 .benefit-box {
   justify-content: center;
   align-items: center;
 }
@@ -249,6 +248,9 @@ main .wrapper {
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 15px;
+}
+.header .content__wrapper {
+  height: 100%;
 }
 .header .content__wrapper .header__menu-block {
   border: 1px solid white;
@@ -513,9 +515,6 @@ main .wrapper {
   background-image: url("/img/main/clients/images/photodune-3414776-business-group-m.webp");
   background-repeat: no-repeat;
   height: 652px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .clients__section .title .first-word {
   color: white;
@@ -528,19 +527,16 @@ main .wrapper {
 }
 .clients__section .container {
   box-sizing: border-box;
+  width: 100%;
 }
-.clients__section .container div {
-  border: 1px solid red;
-}
-.clients__section .text-content-box {
-  align-items: center;
-  width: 50%;
+.clients__section .container .text-content-box {
   box-sizing: border-box;
+  width: 50%;
 }
-.clients__section .text-content-box .inner-section__title__big {
+.clients__section .container .text-content-box .inner-section__title__big {
   color: white;
 }
-.clients__section .text-content-box .text-content {
+.clients__section .container .text-content-box .text-content {
   text-align: center;
   color: #a4a4a4;
   margin-top: 51px;
@@ -548,28 +544,22 @@ main .wrapper {
   margin-bottom: 50px;
   margin-left: 0;
 }
-.clients__section .text-content-box .img-content .inner-section__title__small {
+.clients__section .container .text-content-box .img-content .inner-section__title__small {
   color: #f40436;
   margin-top: 17px;
   margin-right: 0;
   margin-bottom: 28px;
   margin-left: 0;
 }
-.clients__section .img-content-box {
-  display: flex;
-  flex-direction: column;
+.clients__section .container .img-content-box {
   justify-content: space-between;
   width: 50%;
   box-sizing: border-box;
-  margin-left: 30px;
 }
-.clients__section .img-content-box .img-box {
-  display: flex;
-}
-.clients__section .img-content-box .img-box:nth-of-type(1) {
+.clients__section .container .img-content-box .img-box:nth-of-type(1) {
   margin-bottom: 39px;
 }
-.clients__section .img-content-box .img-box img:nth-child(1), .clients__section .img-content-box .img-box img:nth-child(3) {
+.clients__section .container .img-content-box .img-box img:nth-child(1), .clients__section .container .img-content-box .img-box img:nth-child(3) {
   margin-right: 30px;
 }
 
