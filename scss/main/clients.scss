@@ -1,6 +1,13 @@
 .clients__section {  
     background-image: url('/img/main/clients/images/photodune-3414776-business-group-m.webp');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .content__wrapper {
+        padding-top: 94px;
+        padding-bottom: 100px;
+    }
 
     .title {
         @include diff-color-title($white, $red);
@@ -24,6 +31,8 @@
         .text-content {
             text-align: $text-center;
             color: $dark-grey;
+
+            margin: 50px 0;
         }
 
         .img-content {
