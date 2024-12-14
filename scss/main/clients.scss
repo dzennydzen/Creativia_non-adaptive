@@ -6,6 +6,10 @@
         @include diff-color-title($white, $red);
     }
 
+    .content__wrapper {
+        border: 5px solid black;
+    }
+
     .container {
         div {
             border: 1px solid red;

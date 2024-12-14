@@ -519,6 +519,9 @@ main .wrapper {
 .clients__section .title .second-word {
   color: #f40436;
 }
+.clients__section .content__wrapper {
+  border: 5px solid black;
+}
 .clients__section .container div {
   border: 1px solid red;
 }
