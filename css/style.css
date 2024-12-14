@@ -514,8 +514,8 @@ main .wrapper {
   background-repeat: no-repeat;
 }
 .clients__section .content__wrapper {
-  padding-top: 94px;
-  padding-bottom: 100px;
+  padding: 0;
+  border: 1px solid black;
 }
 .clients__section .title .first-word {
   color: white;
@@ -539,18 +539,12 @@ main .wrapper {
 .clients__section .text-content-box .text-content {
   text-align: center;
   color: #a4a4a4;
-  margin: 50px 0;
-}
-.clients__section .text-content-box .img-content {
-  max-height: 124px;
-  box-sizing: border-box;
 }
 .clients__section .text-content-box .img-content .inner-section__title__small {
   color: #f40436;
-  margin-top: 17px;
-  margin-right: 0;
-  margin-bottom: 25px;
-  margin-left: 0;
+}
+.clients__section .img-content-box {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
