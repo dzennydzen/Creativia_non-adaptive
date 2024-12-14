@@ -529,7 +529,6 @@ main .wrapper {
   margin: 0;
 }
 .clients__section .text-content-box {
-  justify-content: space-between;
   align-items: center;
 }
 .clients__section .text-content-box .inner-section__title__big {

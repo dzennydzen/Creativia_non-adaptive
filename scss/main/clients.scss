@@ -22,7 +22,7 @@
 
     .text-content-box {
         @extend %flex-column;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: center;
 //text style
         .inner-section__title__big {
