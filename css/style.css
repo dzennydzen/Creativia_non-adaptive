@@ -79,12 +79,12 @@
   flex-direction: row;
 }
 
-.body .container-2 .benefit-box, .body .content__wrapper {
+.clients__section .text-content-box, .body .container-2 .benefit-box, .body .content__wrapper {
   display: flex;
   flex-direction: column;
 }
 
-.portfolio__section-gallery, .portfolio__section__list, .body .container-2 .benefit-box {
+.clients__section .text-content-box, .portfolio__section-gallery, .portfolio__section__list, .body .container-2 .benefit-box {
   justify-content: center;
   align-items: center;
 }
@@ -507,8 +507,10 @@ main .wrapper {
   background-image: url("/img/main/clients/images/photodune-3414776-business-group-m.webp");
   background-repeat: no-repeat;
 }
-
-.img-box {
+.clients__section .container div {
+  border: 1px solid red;
+}
+.clients__section .img-box {
   display: flex;
 }
 

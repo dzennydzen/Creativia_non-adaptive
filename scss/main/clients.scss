@@ -1,11 +1,21 @@
 .clients__section {  
     background-image: url('/img/main/clients/images/photodune-3414776-business-group-m.webp');
     background-repeat: no-repeat;
-}
 
+    .container {
+        div {
+            border: 1px solid red;
+        }
+    }
 
-.img-box {
-    display: flex;
+    .text-content-box {
+        @extend %flex-column;
+        @extend %flex-alignment;
+    }
+
+    .img-box {
+        display: flex;
+    }
 }
 
 
