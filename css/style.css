@@ -535,6 +535,10 @@ main .wrapper {
 }
 .clients__section .text-content-box .img-content .inner-section__title__small {
   color: #f40436;
+  margin-top: 17px;
+  margin-right: 0;
+  margin-bottom: 28px;
+  margin-left: 0;
 }
 .clients__section .img-box {
   display: flex;

@@ -30,10 +30,11 @@
             @extend %flex-column;
             @extend %flex-alignment;
             
-
             .inner-section__title__small {
                 @extend %small-title-bold;
                 color: $red;
+
+                @include margin(17px,0,28px,0);
             }
         }
     }
