@@ -525,6 +525,9 @@ main .wrapper {
 .clients__section .container div {
   border: 1px solid red;
 }
+.clients__section .bold-text-content {
+  margin: 0;
+}
 .clients__section .text-content-box {
   justify-content: space-between;
   align-items: center;

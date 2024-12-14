@@ -16,6 +16,10 @@
         }
     }
 
+    .bold-text-content {
+        margin: 0;
+    }
+
     .text-content-box {
         @extend %flex-column;
         justify-content: space-between;
