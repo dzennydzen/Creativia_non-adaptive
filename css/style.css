@@ -512,8 +512,6 @@ main .wrapper {
 .clients__section {
   background-image: url("/img/main/clients/images/photodune-3414776-business-group-m.webp");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 .clients__section .content__wrapper {
   padding-top: 94px;
@@ -524,6 +522,9 @@ main .wrapper {
 }
 .clients__section .title .second-word {
   color: #f40436;
+}
+.clients__section .container {
+  max-height: 272px;
 }
 .clients__section .container div {
   border: 1px solid red;
@@ -540,15 +541,16 @@ main .wrapper {
   color: #a4a4a4;
   margin: 50px 0;
 }
+.clients__section .text-content-box .img-content {
+  max-height: 124px;
+  box-sizing: border-box;
+}
 .clients__section .text-content-box .img-content .inner-section__title__small {
   color: #f40436;
   margin-top: 17px;
   margin-right: 0;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   margin-left: 0;
-}
-.clients__section .img-box {
-  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
