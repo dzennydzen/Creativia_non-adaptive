@@ -2,6 +2,10 @@
     background-image: url('/img/main/clients/images/photodune-3414776-business-group-m.webp');
     background-repeat: no-repeat;
 
+    .title {
+        @include diff-color-title($white, $red);
+    }
+
     .container {
         div {
             border: 1px solid red;
@@ -10,7 +14,8 @@
 
     .text-content-box {
         @extend %flex-column;
-        @extend %flex-alignment;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .img-box {

@@ -84,7 +84,7 @@
   flex-direction: column;
 }
 
-.clients__section .text-content-box, .portfolio__section-gallery, .portfolio__section__list, .body .container-2 .benefit-box {
+.portfolio__section-gallery, .portfolio__section__list, .body .container-2 .benefit-box {
   justify-content: center;
   align-items: center;
 }
@@ -507,8 +507,18 @@ main .wrapper {
   background-image: url("/img/main/clients/images/photodune-3414776-business-group-m.webp");
   background-repeat: no-repeat;
 }
+.clients__section .title .first-word {
+  color: white;
+}
+.clients__section .title .second-word {
+  color: #f40436;
+}
 .clients__section .container div {
   border: 1px solid red;
+}
+.clients__section .text-content-box {
+  justify-content: space-between;
+  align-items: center;
 }
 .clients__section .img-box {
   display: flex;
