@@ -512,6 +512,7 @@ main .wrapper {
 .clients__section {
   background-image: url("/img/main/clients/images/photodune-3414776-business-group-m.webp");
   background-repeat: no-repeat;
+  height: 652px;
 }
 .clients__section .title .first-word {
   color: white;
@@ -520,6 +521,7 @@ main .wrapper {
   color: #f40436;
 }
 .clients__section .content__wrapper {
+  height: auto;
   border: 5px solid black;
 }
 .clients__section .container div {

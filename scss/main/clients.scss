@@ -1,12 +1,14 @@
 .clients__section {  
     background-image: url('/img/main/clients/images/photodune-3414776-business-group-m.webp');
     background-repeat: no-repeat;
+    height: 652px;
 
     .title {
         @include diff-color-title($white, $red);
     }
 
     .content__wrapper {
+        height: auto;
         border: 5px solid black;
     }
 
@@ -22,7 +24,6 @@
 
     .text-content-box {
         @extend %flex-column;
-        // justify-content: space-between;
         align-items: center;
 //text style
         .inner-section__title__big {
