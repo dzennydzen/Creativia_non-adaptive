@@ -94,6 +94,15 @@
   align-items: center;
 }
 
+.clients__section::before, .header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .about__section .img-box .img-box__wrapper .img__wrapper:nth-of-type(2)::before, .about__section .img-box .img-box__wrapper .img__wrapper:nth-of-type(1)::before {
   content: "";
   position: absolute;
@@ -163,12 +172,6 @@ main .wrapper {
   background-repeat: no-repeat;
 }
 .header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
 .header__menu-block {
@@ -515,6 +518,10 @@ main .wrapper {
   background-image: url("/img/main/clients/images/photodune-3414776-business-group-m.webp");
   background-repeat: no-repeat;
   height: 652px;
+  position: relative;
+}
+.clients__section::before {
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .clients__section .title .first-word {
   color: white;
@@ -528,10 +535,12 @@ main .wrapper {
 .clients__section .container {
   box-sizing: border-box;
   width: 100%;
+  justify-content: space-between;
 }
 .clients__section .container .text-content-box {
   box-sizing: border-box;
-  width: 50%;
+  max-width: 50%;
+  margin-right: 25px;
 }
 .clients__section .container .text-content-box .inner-section__title__big {
   color: white;
@@ -552,15 +561,18 @@ main .wrapper {
   margin-left: 0;
 }
 .clients__section .container .img-content-box {
-  justify-content: space-between;
-  width: 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+}
+.clients__section .container .img-content-box .img-box {
   box-sizing: border-box;
 }
-.clients__section .container .img-content-box .img-box:nth-of-type(1) {
+.clients__section .container .img-content-box .img-box:nth-child(1) {
   margin-bottom: 39px;
 }
-.clients__section .container .img-content-box .img-box img:nth-child(1), .clients__section .container .img-content-box .img-box img:nth-child(3) {
-  margin-right: 30px;
+.clients__section .container .img-content-box .img-box img:nth-child(1) {
+  margin-right: 26px;
 }
 
 /*# sourceMappingURL=style.css.map */

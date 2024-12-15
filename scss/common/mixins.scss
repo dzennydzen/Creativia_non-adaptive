@@ -9,6 +9,11 @@
     @extend %button-text;
 }
 
+@mixin overlay($color) {
+    @extend %casual-overlay;
+    background-color: $color;
+}
+
 //text
 
 @mixin diff-color-title ($first-clr, $second-clr) {

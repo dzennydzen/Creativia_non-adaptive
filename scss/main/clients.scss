@@ -1,9 +1,13 @@
 .clients__section {  
-    // height: 652px;
-
     background-image: url('/img/main/clients/images/photodune-3414776-business-group-m.webp');
     background-repeat: no-repeat;
     height: 652px;
+
+    position: relative;
+
+    &::before {
+        @include overlay(rgba(0, 0, 0, 0.9));
+    }
 
     @extend %flex-row;
     @extend %flex-alignment;
@@ -20,13 +24,16 @@
         box-sizing: border-box;
         width: 100%;
 
+        justify-content: space-between;
+
         .text-content-box {
             @extend %flex-column;
             @extend %flex-alignment;
             box-sizing: border-box;
     
-            width: 50%;
+            max-width: 50%;
 
+            margin-right: 25px;
             
             
     //text style
@@ -55,99 +62,26 @@
         }
 
         .img-content-box {
-            @extend %flex-column;
-            justify-content: space-between;
+            max-width: 50%;
+            box-sizing: border-box;
 
-            width: 50%;
-            box-sizing: border-box;            
-    
+            @extend %flex-column;
+            justify-content: space-evenly;
+            
             .img-box {
                 @extend %flex-row;
-                
-                &:nth-of-type(1) {
+                box-sizing: border-box;
+
+                &:nth-child(1) {
                     margin-bottom: 39px;
                 }
-    
+
                 img {
-                    &:nth-child(1), &:nth-child(3) {
-                        margin-right: 30px;
+                    &:nth-child(1) {
+                        margin-right: 26px;
                     }
                 }
             }
         }
     }
 }
-
-
-// .container {
-//     border: 1px solid red;
-   
-//     // height: 271px;
-    
-    
-//     .text-content-box {
-        
-//         width: 55%;
-
-//         .inner-section__title__big {
-//             color: $white;
-//         }
-
-//         .text-content {
-//             text-align: $text-center;
-//         }
-//     }
-
-//     .img-content {
-//         @extend %flex-column;
-//         @extend %flex-alignment;
-
-//         .inner-section__title__small {
-//             @extend %small-title-bold;
-//             color: $red;
-
-//             @include margin(17px, 0, 26px, 0);
-//         }
-//     }
-
-//     .text-content-box {
-//         width: 55%;
-
-//         .inner-section__title__big {
-//             margin-bottom: 50px;
-//         }
-
-//         .inner-section__title__small {
-//             @extend %small-title-bold;
-//             color: $red;
-
-//             margin-top: 17px;  
-//         }
-
-//         .decorative__elem {
-//             display: inline-block;
-            
-//         }
-//     }
-
-//     .img-content {
-//         border:1px solid orange;
-//         margin-top: 50px;
-//         max-height: 123px;
-//         box-sizing: border-box;
-//     }
-
-//     .test {
-//         display: flex;
-//     }
-
-//     .img-content-box {
-//         margin-left: 30px;
-//         width: 50%;
-        
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: space-between;
-        
-//     }
-// }
