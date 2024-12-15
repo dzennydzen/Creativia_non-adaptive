@@ -581,4 +581,11 @@ main .wrapper {
   margin-right: 26px;
 }
 
+.teamwork__section .team-member__card {
+  border: 1px solid black;
+}
+.teamwork__section img {
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
