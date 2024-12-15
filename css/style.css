@@ -31,7 +31,6 @@
 .clients__section .content__wrapper, .header .content__wrapper, .body .content__wrapper {
   border: 2px solid red;
   max-width: 1170px;
-  height: 100%;
   margin: 0 auto;
   position: relative;
 }

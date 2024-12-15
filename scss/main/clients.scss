@@ -3,67 +3,79 @@
 
     background-image: url('/img/main/clients/images/photodune-3414776-business-group-m.webp');
     background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center center;
+    height: 652px;
 
-    .content__wrapper {
-        // padding-top: 94px;
-        // padding-bottom: 100px;
-        
-        padding: 0;
-
-        // height: 652px;
-
-        border: 1px solid black;
-    }
+    @extend %flex-row;
+    @extend %flex-alignment;
 
     .title {
         @include diff-color-title($white, $red);
     }
 
-    .container {
-        max-height: 272px;
-
-        div {
-            border: 1px solid red;
-        }
+    .content__wrapper {
+        @include content-wrapper-height(auto);
     }
 
-    .text-content-box {
-        @extend %flex-column;
-        justify-content: space-between;
-        align-items: center;
-//text style
-        .inner-section__title__big {
-            color: $white;
-        }
+    .container {
+        box-sizing: border-box;
+        width: 100%;
 
-        .text-content {
-            text-align: $text-center;
-            color: $dark-grey;
-
-            // margin: 50px 0;
-        }
-
-        .img-content {
+        .text-content-box {
             @extend %flex-column;
             @extend %flex-alignment;
-            // max-height: 124px;
-            // box-sizing: border-box;
-            
-            .inner-section__title__small {
-                @extend %small-title-bold;
-                color: $red;
+            box-sizing: border-box;
+    
+            width: 50%;
 
-                // @include margin(17px,0,25px,0);
+            
+            
+    //text style
+            .inner-section__title__big {
+                color: $white;
+            }
+    
+            .text-content {
+                text-align: $text-center;
+                color: $dark-grey;
+    
+                @include margin(51px, 0, 50px, 0);
+            }
+    
+            .img-content {
+                @extend %flex-column;
+                @extend %flex-alignment;
+                
+                .inner-section__title__small {
+                    @extend %small-title-bold;
+                    color: $red;
+    
+                    @include margin(17px, 0, 28px, 0);
+                }
+            }
+        }
+
+        .img-content-box {
+            @extend %flex-column;
+            justify-content: space-between;
+
+            width: 50%;
+            box-sizing: border-box;            
+    
+            .img-box {
+                @extend %flex-row;
+                
+                &:nth-of-type(1) {
+                    margin-bottom: 39px;
+                }
+    
+                img {
+                    &:nth-child(1), &:nth-child(3) {
+                        margin-right: 30px;
+                    }
+                }
             }
         }
     }
-
-    .img-content-box {
-        display: flex;
-    }
-
 }
 
 

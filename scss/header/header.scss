@@ -104,7 +104,7 @@
 //выравнивание
 
     .content__wrapper {
-        // @extend %content-wrapper;
+        @include content-wrapper-height(100%);
 
         .header__menu-block {
             border: 1px solid white;

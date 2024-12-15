@@ -66,6 +66,11 @@
     height: $height;
 }
 
+@mixin content-wrapper-height ($height) {
+    @extend %content-wrapper;
+    height: $height;
+}
+
 //transformations
 
 @mixin transform($axis, $value) {
