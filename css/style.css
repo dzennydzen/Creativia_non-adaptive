@@ -73,7 +73,7 @@
   font-family: "Raleway_medium", serif;
 }
 
-.about__section .container-1::after, .header .content__wrapper::before, .header .content__wrapper::after {
+.clients__section::after, .about__section .container-1::after, .header .content__wrapper::before, .header .content__wrapper::after {
   content: "";
   background-repeat: no-repeat;
   position: absolute;
@@ -522,6 +522,12 @@ main .wrapper {
 }
 .clients__section::before {
   background-color: rgba(0, 0, 0, 0.9);
+}
+.clients__section::after {
+  background-image: url("/img/main/clients/shapes/scroll bar copy.png");
+  width: 515px;
+  height: 19px;
+  bottom: -10px;
 }
 .clients__section .title .first-word {
   color: white;

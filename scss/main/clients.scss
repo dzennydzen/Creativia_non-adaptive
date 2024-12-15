@@ -9,6 +9,12 @@
         @include overlay(rgba(0, 0, 0, 0.9));
     }
 
+    &::after {
+        @include pseudo_elem(url('/img/main/clients/shapes/scroll bar copy.png'),515px,19px);
+        
+        bottom: -10px;
+    }
+
     @extend %flex-row;
     @extend %flex-alignment;
 
