@@ -84,7 +84,7 @@
   flex-direction: row;
 }
 
-.clients__section .container .img-content-box, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .body .container-2 .benefit-box, .clients__section .content__wrapper, .header .content__wrapper, .body .content__wrapper {
+.teamwork__section .team-member__card, .clients__section .container .img-content-box, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .body .container-2 .benefit-box, .clients__section .content__wrapper, .header .content__wrapper, .body .content__wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -143,6 +143,7 @@
 }
 .body .inner-section__title__big {
   text-transform: uppercase;
+  margin: 0;
 }
 .body .bold-text-content {
   color: #505050;
@@ -586,6 +587,17 @@ main .wrapper {
 
 .teamwork__section .team-member__card {
   border: 1px solid black;
+  box-sizing: border-box;
+  text-align: center;
+}
+.teamwork__section .team-member__card:nth-of-type(1) {
+  margin-right: 30px;
+}
+.teamwork__section .team-member__card:nth-of-type(2) {
+  margin-right: 30px;
+}
+.teamwork__section .team-member__card:nth-of-type(3) {
+  margin-right: 30px;
 }
 .teamwork__section img {
   max-width: 100%;
