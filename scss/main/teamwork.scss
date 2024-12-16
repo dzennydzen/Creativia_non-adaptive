@@ -1,4 +1,7 @@
 .teamwork__section {
+    .title {
+        @include diff-color-title($black, $red);
+    }
 
     .team-member__card {
         border: 1px solid #e7e7e7;
@@ -37,7 +40,6 @@
 
                 svg {
                     @include sizes(45px, 41px);
-                    border: 1px solid green;
                     
                     path {
                         &:first-child {
@@ -48,6 +50,26 @@
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .container {
+        * {
+            border: 1px solid black;
+        }
+
+
+        &:last-child {
+            border: 1px solid red;
+
+            .skills__title {
+                @extend %section-title-medium;
+                text-transform: uppercase;
+            }
+
+            .text-content {
+                color: $most-dark-grey;
             }
         }
     }
