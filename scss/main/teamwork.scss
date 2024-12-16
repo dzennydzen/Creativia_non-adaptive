@@ -1,6 +1,7 @@
 .teamwork__section {
+
     .team-member__card {
-        border: 1px solid black;
+        border: 1px solid #e7e7e7;
 
         box-sizing: border-box;
 
@@ -8,9 +9,46 @@
         @extend %flex-column;
         
         text-align: center;
-    }
 
-    img {
-        max-width: 100%;
+        img {
+            max-width: 100%;
+        }
+
+        &:first-child {
+            position: relative;
+        }
+
+        .inner-section__title__big {
+            @include margin(33px,0,25px,0);
+        }
+
+        .text-content {
+           margin-bottom: 32px;
+        }
+
+        .extra-content {
+            position: absolute;
+            top: 100px;
+            left: 55px;
+
+            .contact__icon {
+
+                @include margin-loop(right, 1,3, 5px);
+
+                svg {
+                    @include sizes(45px, 41px);
+                    border: 1px solid green;
+                    
+                    path {
+                        &:first-child {
+                            fill: $white;
+                        }
+                        &:last-child {
+                            fill: $red;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

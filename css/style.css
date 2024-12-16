@@ -586,7 +586,7 @@ main .wrapper {
 }
 
 .teamwork__section .team-member__card {
-  border: 1px solid black;
+  border: 1px solid #e7e7e7;
   box-sizing: border-box;
   text-align: center;
 }
@@ -599,8 +599,42 @@ main .wrapper {
 .teamwork__section .team-member__card:nth-of-type(3) {
   margin-right: 30px;
 }
-.teamwork__section img {
+.teamwork__section .team-member__card img {
   max-width: 100%;
+}
+.teamwork__section .team-member__card:first-child {
+  position: relative;
+}
+.teamwork__section .team-member__card .inner-section__title__big {
+  margin-top: 33px;
+  margin-right: 0;
+  margin-bottom: 25px;
+  margin-left: 0;
+}
+.teamwork__section .team-member__card .text-content {
+  margin-bottom: 32px;
+}
+.teamwork__section .team-member__card .extra-content {
+  position: absolute;
+  top: 100px;
+  left: 55px;
+}
+.teamwork__section .team-member__card .extra-content .contact__icon:nth-of-type(1) {
+  margin-right: 5px;
+}
+.teamwork__section .team-member__card .extra-content .contact__icon:nth-of-type(2) {
+  margin-right: 5px;
+}
+.teamwork__section .team-member__card .extra-content .contact__icon svg {
+  width: 45px;
+  height: 41px;
+  border: 1px solid green;
+}
+.teamwork__section .team-member__card .extra-content .contact__icon svg path:first-child {
+  fill: white;
+}
+.teamwork__section .team-member__card .extra-content .contact__icon svg path:last-child {
+  fill: #f40436;
 }
 
 /*# sourceMappingURL=style.css.map */
