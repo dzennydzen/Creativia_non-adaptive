@@ -55,6 +55,7 @@
 
     .text-content {
         @extend %regular-text-content;
+        margin: 0;
     }
 
     //inner section containers

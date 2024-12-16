@@ -150,6 +150,9 @@
   margin-top: 50px;
   margin-bottom: 100px;
 }
+.body .text-content {
+  margin: 0;
+}
 .body .container-2 .benefit-box .text-content {
   text-align: center;
 }
