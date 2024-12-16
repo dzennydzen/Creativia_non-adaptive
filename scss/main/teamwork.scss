@@ -54,22 +54,27 @@
         }
     }
 
-    .container {
-        * {
-            border: 1px solid black;
-        }
-
+    .container {    
 
         &:last-child {
-            border: 1px solid red;
+            max-width: 800px;
 
-            .skills__title {
-                @extend %section-title-medium;
-                text-transform: uppercase;
-            }
+            margin: $center-margin;            
 
-            .text-content {
-                color: $most-dark-grey;
+            .skills__item {
+                text-align: center;
+            
+                .skills__title {
+                    @extend %section-title-medium;
+                    text-transform: uppercase;
+                    margin: 0;
+
+                    @include margin(25px,0,26px,0);
+                }
+    
+                .text-content {
+                    color: $most-dark-grey;
+                }
             }
         }
     }

@@ -62,7 +62,7 @@
   text-transform: uppercase;
 }
 
-.teamwork__section .container:last-child .skills__title, .body .inner-section__title, .body .inner-section__title__big {
+.teamwork__section .container:last-child .skills__item .skills__title, .body .inner-section__title, .body .inner-section__title__big {
   font-family: "Raleway_medium", serif;
   font-size: 20px;
 }
@@ -641,16 +641,22 @@ main .wrapper {
 .teamwork__section .team-member__card .extra-content .contact__icon svg path:last-child {
   fill: #f40436;
 }
-.teamwork__section .container * {
-  border: 1px solid black;
-}
 .teamwork__section .container:last-child {
-  border: 1px solid red;
+  max-width: 800px;
+  margin: 0 auto;
 }
-.teamwork__section .container:last-child .skills__title {
+.teamwork__section .container:last-child .skills__item {
+  text-align: center;
+}
+.teamwork__section .container:last-child .skills__item .skills__title {
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 25px;
+  margin-right: 0;
+  margin-bottom: 26px;
+  margin-left: 0;
 }
-.teamwork__section .container:last-child .text-content {
+.teamwork__section .container:last-child .skills__item .text-content {
   color: #505050;
 }
 
