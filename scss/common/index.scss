@@ -28,6 +28,10 @@
         @include word-color($red);
     }
 
+    .section-title-medium {
+        @extend %section-title-medium;
+    }
+
     .title {
        @extend %title-bold;
        margin: $reset-margin;

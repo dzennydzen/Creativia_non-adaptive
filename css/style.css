@@ -62,7 +62,7 @@
   text-transform: uppercase;
 }
 
-.teamwork__section .container:last-child .skills__item .skills__title, .body .inner-section__title, .body .inner-section__title__big {
+.body .inner-section__title, .body .inner-section__title__big, .body .section-title-medium {
   font-family: "Raleway_medium", serif;
   font-size: 20px;
 }
@@ -670,7 +670,7 @@ main .wrapper {
 .teamwork__section .container:last-child .skills__item {
   text-align: center;
 }
-.teamwork__section .container:last-child .skills__item .skills__title {
+.teamwork__section .container:last-child .skills__item .section-title-medium {
   text-transform: uppercase;
   margin: 0;
   margin-top: 25px;

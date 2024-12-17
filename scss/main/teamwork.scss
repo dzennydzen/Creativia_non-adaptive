@@ -81,8 +81,7 @@
             .skills__item {
                 text-align: center;
             
-                .skills__title {
-                    @extend %section-title-medium;
+                .section-title-medium {
                     text-transform: uppercase;
                     margin: 0;
 
