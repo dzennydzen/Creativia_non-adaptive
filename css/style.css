@@ -682,4 +682,14 @@ main .wrapper {
   color: #505050;
 }
 
+.services__section {
+  background-color: #262626;
+}
+.services__section .title .first-word {
+  color: white;
+}
+.services__section .title .second-word {
+  color: #f40436;
+}
+
 /*# sourceMappingURL=style.css.map */
