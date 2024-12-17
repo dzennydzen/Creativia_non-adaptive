@@ -317,7 +317,7 @@ main .wrapper {
   background-image: url("/img/main/about/shapes/scroll bar.png");
   width: 515px;
   height: 19px;
-  bottom: -100px;
+  bottom: -110px;
   left: 50%;
   transform: translatex(-50%);
 }
@@ -335,6 +335,12 @@ main .wrapper {
 }
 .about__section .container-2 .icon_img path:nth-of-type(2) {
   fill: black;
+}
+.about__section .container-2 .inner-section__title__big {
+  margin-top: 35px;
+  margin-right: 0;
+  margin-bottom: 28px;
+  margin-left: 0;
 }
 .about__section .extra-content__tab {
   border: 1px solid black;
