@@ -99,6 +99,7 @@
 
     .content__wrapper {
         @include content-wrapper-height(100%);
+        @extend %flex-column;
 
         .header__menu-block {
             border: 1px solid white;

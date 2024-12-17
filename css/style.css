@@ -84,7 +84,7 @@
   flex-direction: row;
 }
 
-.teamwork__section .team-member__card, .clients__section .container .img-content-box, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .body .container-2 .benefit-box, .clients__section .content__wrapper, .header .content__wrapper, .body .content__wrapper {
+.teamwork__section .team-member__card, .clients__section .container .img-content-box, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .header .content__wrapper, .body .container-2 .benefit-box {
   display: flex;
   flex-direction: column;
 }
