@@ -1,0 +1,7 @@
+.services__section {
+    background-color: $light-raisin-black;
+
+    .title {
+        @include diff-color-title($white, $red);
+    }
+}
