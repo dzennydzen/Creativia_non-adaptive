@@ -1,8 +1,26 @@
 .teamwork__section {
+
     .title {
         @include diff-color-title($black, $red);
+
+        &:nth-of-type(2) {
+            margin-top: 220px;
+        }
     }
 
+    .container:has(>.team-member__card) {
+        position: relative;
+
+        &::after {
+            @include pseudo_elem(url('/img/main/about/shapes/scroll\ bar.png'),515px,19px);
+                        
+            bottom: -119px; 
+            left: 50%;
+            @include transform(x, -50%);
+        }
+    }
+    
+    
     .team-member__card {
         border: 1px solid #e7e7e7;
 
@@ -54,13 +72,12 @@
         }
     }
 
-    .container {    
-
+    .container {
         &:last-child {
             max-width: 800px;
 
-            margin: $center-margin;            
-
+            margin: $center-margin;
+        
             .skills__item {
                 text-align: center;
             
