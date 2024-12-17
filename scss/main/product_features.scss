@@ -19,6 +19,8 @@
     .container {
         @extend %flex-row;
         justify-content: center;
+
+        height: 609px;
         
 
         .img-container {
@@ -31,6 +33,7 @@
                 object-fit: contain;
 
                 position: relative;
+                top: -18px;
             }
 
             .img-container__btn {
@@ -47,7 +50,7 @@
         }
         
         .product-features__tabs {
-            padding-top: 95px;
+            padding-top: 93px;
 
             .product-features__tab {
                 border: 1px solid red;

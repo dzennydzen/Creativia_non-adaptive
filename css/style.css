@@ -450,6 +450,7 @@ main .wrapper {
 }
 .product-features__section .container {
   justify-content: center;
+  height: 609px;
 }
 .product-features__section .container .img-container {
   position: relative;
@@ -458,6 +459,7 @@ main .wrapper {
   transform: translateY(-30px);
   object-fit: contain;
   position: relative;
+  top: -18px;
 }
 .product-features__section .container .img-container .img-container__btn {
   background-color: #393939;
@@ -469,7 +471,7 @@ main .wrapper {
   bottom: 15%;
 }
 .product-features__section .container .product-features__tabs {
-  padding-top: 95px;
+  padding-top: 93px;
 }
 .product-features__section .container .product-features__tabs .product-features__tab {
   border: 1px solid red;
