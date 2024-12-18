@@ -8,7 +8,12 @@
     .service__block {
         div, h2 {
             border: 1px solid red;
-            margin: 0;
+        }
+
+        .service__block-upper-content {
+            @extend %flex-row;
+            justify-content: start;
+            align-items: center;
         }
 
         .img__block {
