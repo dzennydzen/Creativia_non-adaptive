@@ -675,6 +675,9 @@ main .wrapper {
 .teamwork__section .team-member__card .extra-content .contact__icon svg path:last-child {
   fill: #f40436;
 }
+.teamwork__section .container {
+  justify-content: center;
+}
 .teamwork__section .container:last-child {
   max-width: 800px;
   margin: 0 auto;
