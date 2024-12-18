@@ -91,3 +91,10 @@
     width: $width;
     height: $height;
 }
+
+@mixin service_pseudo__img($bgi, $width, $height) {
+    @extend %pseudo__services;
+    background-image: $bgi;
+    width: $width;
+    height: $height;
+}

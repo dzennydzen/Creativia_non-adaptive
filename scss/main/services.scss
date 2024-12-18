@@ -15,12 +15,65 @@
                 fill: $dark-grey;
             }
         }
+
+        &:first-child {
+            .img__block {
+                &::before {
+                    @include service_pseudo__img(url('/img/main/services/shapes/1.png'),31px,23px);
+                    top: 30%;
+                    left: 8.5%;
+                }
+            }
+        }
+
+        &:nth-of-type(2) {
+            .img__block {
+                &::before {
+                    @include service_pseudo__img(url('/img/main/services/shapes/2.png'),24px,28px);
+                    top: 28%;
+                    left: 11%;
+                }
+            }
+        }
+
+        &:nth-of-type(3) {
+            .img__block {
+                &::before {
+                    @include service_pseudo__img(url('/img/main/services/shapes/3.png'),35px,35px);
+                    top: 20%;
+                    left: 8%;
+                }
+            }
+        }
+
+        &:nth-of-type(4) {
+            .img__block {
+                &::before {
+                    @include service_pseudo__img(url('/img/main/services/shapes/4.png'),23px,28px);
+                    top: 28%;
+                    left: 11.5%;
+                }
+            }
+        }
+
+        &:nth-of-type(5) {
+            .img__block {
+                &::before {
+                    @include service_pseudo__img(url('/img/main/services/shapes/5.png'),23px,24px);
+                    top: 28%;
+                    left: 12%;
+                }
+            }
+        }
+
+        &:last-child {
+            .img__block {
+                &::before {
+                    @include service_pseudo__img(url('/img/main/services/shapes/6.png'),35px,24px);
+                    top: 28%;
+                    left: 8%;
+                }
+            }
+        }
     }
 }
-
-// &::before {
-//     @include pseudo_elem(url('/img/main/services/shapes/1.png'),31px,23px);
-//     top: 50%;
-//     left: 12%;
-//     @include transform(Y, -50%);
-// }

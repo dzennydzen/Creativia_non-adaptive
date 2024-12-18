@@ -60,6 +60,12 @@
     position: absolute;
 }
 
+%pseudo__services {
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
 //flex
 
 %flex-row {
