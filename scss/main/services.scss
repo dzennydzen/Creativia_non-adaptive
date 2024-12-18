@@ -6,6 +6,11 @@
     }
 
     .service__block {
+        div, h2 {
+            border: 1px solid red;
+            margin: 0;
+        }
+
         .img__block {
             position: relative; 
 
@@ -21,7 +26,7 @@
                 &::before {
                     @include service_pseudo__img(url('/img/main/services/shapes/1.png'),31px,23px);
                     top: 30%;
-                    left: 8.5%;
+                    left: 3%;
                 }
             }
         }
@@ -31,7 +36,7 @@
                 &::before {
                     @include service_pseudo__img(url('/img/main/services/shapes/2.png'),24px,28px);
                     top: 28%;
-                    left: 11%;
+                    left: 3.7%;
                 }
             }
         }
@@ -40,8 +45,8 @@
             .img__block {
                 &::before {
                     @include service_pseudo__img(url('/img/main/services/shapes/3.png'),35px,35px);
-                    top: 20%;
-                    left: 8%;
+                    top: 19.5%;
+                    left: 2.7%;
                 }
             }
         }
@@ -50,8 +55,8 @@
             .img__block {
                 &::before {
                     @include service_pseudo__img(url('/img/main/services/shapes/4.png'),23px,28px);
-                    top: 28%;
-                    left: 11.5%;
+                    top: 25%;
+                    left: 3.8%;
                 }
             }
         }
@@ -61,7 +66,7 @@
                 &::before {
                     @include service_pseudo__img(url('/img/main/services/shapes/5.png'),23px,24px);
                     top: 28%;
-                    left: 12%;
+                    left: 3.8%;
                 }
             }
         }
@@ -71,9 +76,15 @@
                 &::before {
                     @include service_pseudo__img(url('/img/main/services/shapes/6.png'),35px,24px);
                     top: 28%;
-                    left: 8%;
+                    left: 2.8%;
                 }
             }
         }
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 56px 30px;
     }
 }

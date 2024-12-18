@@ -154,6 +154,9 @@
   text-transform: uppercase;
   margin: 0;
 }
+.body h1, .body h2, .body h3 {
+  margin: 0;
+}
 .body .bold-text-content {
   color: #505050;
   text-align: center;
@@ -699,6 +702,10 @@ main .wrapper {
 .services__section .title .second-word {
   color: #f40436;
 }
+.services__section .service__block div, .services__section .service__block h2 {
+  border: 1px solid red;
+  margin: 0;
+}
 .services__section .service__block .img__block {
   position: relative;
 }
@@ -712,42 +719,47 @@ main .wrapper {
   width: 31px;
   height: 23px;
   top: 30%;
-  left: 8.5%;
+  left: 3%;
 }
 .services__section .service__block:nth-of-type(2) .img__block::before {
   background-image: url("/img/main/services/shapes/2.png");
   width: 24px;
   height: 28px;
   top: 28%;
-  left: 11%;
+  left: 3.7%;
 }
 .services__section .service__block:nth-of-type(3) .img__block::before {
   background-image: url("/img/main/services/shapes/3.png");
   width: 35px;
   height: 35px;
-  top: 20%;
-  left: 8%;
+  top: 19.5%;
+  left: 2.7%;
 }
 .services__section .service__block:nth-of-type(4) .img__block::before {
   background-image: url("/img/main/services/shapes/4.png");
   width: 23px;
   height: 28px;
-  top: 28%;
-  left: 11.5%;
+  top: 25%;
+  left: 3.8%;
 }
 .services__section .service__block:nth-of-type(5) .img__block::before {
   background-image: url("/img/main/services/shapes/5.png");
   width: 23px;
   height: 24px;
   top: 28%;
-  left: 12%;
+  left: 3.8%;
 }
 .services__section .service__block:last-child .img__block::before {
   background-image: url("/img/main/services/shapes/6.png");
   width: 35px;
   height: 24px;
   top: 28%;
-  left: 8%;
+  left: 2.8%;
+}
+.services__section .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 56px 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
