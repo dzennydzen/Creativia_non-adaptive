@@ -30,7 +30,7 @@
 
     .section-title-medium {
         @extend %section-title-medium;
-        text-transform: $uppercase;
+        text-transform: uppercase;
     }
 
     .title {
