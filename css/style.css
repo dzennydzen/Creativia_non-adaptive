@@ -693,5 +693,13 @@ main .wrapper {
 .services__section .title .second-word {
   color: #f40436;
 }
+.services__section .service__block .img__block {
+  position: relative;
+}
+.services__section .service__block .img__block svg {
+  width: 66px;
+  height: 57px;
+  fill: #a4a4a4;
+}
 
 /*# sourceMappingURL=style.css.map */

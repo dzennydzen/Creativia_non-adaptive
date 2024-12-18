@@ -4,4 +4,23 @@
     .title {
         @include diff-color-title($white, $red);
     }
+
+    .service__block {
+        .img__block {
+            position: relative; 
+
+            svg {
+                width: 66px;
+                height: 57px;
+                fill: $dark-grey;
+            }
+        }
+    }
 }
+
+// &::before {
+//     @include pseudo_elem(url('/img/main/services/shapes/1.png'),31px,23px);
+//     top: 50%;
+//     left: 12%;
+//     @include transform(Y, -50%);
+// }
