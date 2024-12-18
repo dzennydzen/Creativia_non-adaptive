@@ -132,6 +132,9 @@
 .body .red-word {
   color: #f40436;
 }
+.body .section-title-medium {
+  text-transform: uppercase;
+}
 .body .title {
   margin: 0;
 }
