@@ -5,11 +5,18 @@
     }
     
     .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 30px;
+
+
         div {
             border: 1px solid purple;
         }
 
         .plans__block {
+            text-align: center;
+
             .section-title-medium {
                 color: $white;
                 background-color: $raisin-black;

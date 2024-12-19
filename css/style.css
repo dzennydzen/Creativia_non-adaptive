@@ -801,8 +801,16 @@ main .wrapper {
 .plans__section .title .second-word {
   color: #f40436;
 }
+.plans__section .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+}
 .plans__section .container div {
   border: 1px solid purple;
+}
+.plans__section .container .plans__block {
+  text-align: center;
 }
 .plans__section .container .plans__block .section-title-medium {
   color: white;
