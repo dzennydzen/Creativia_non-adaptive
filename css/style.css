@@ -789,4 +789,8 @@ main .wrapper {
   color: #a4a4a4;
 }
 
+.plans__section .container div {
+  border: 1px solid purple;
+}
+
 /*# sourceMappingURL=style.css.map */
