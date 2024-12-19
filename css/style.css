@@ -698,6 +698,7 @@ main .wrapper {
 
 .services__section {
   background-color: #262626;
+  position: relative;
 }
 .services__section::after {
   background-image: url("/img/main/clients/shapes/scroll bar copy.png");
