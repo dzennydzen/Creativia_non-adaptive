@@ -41,7 +41,7 @@
   position: relative;
 }
 
-.portfolio__section__list, .header__menu-list {
+.plans__section .container .plans__block .buy-btn__part button, .portfolio__section__list, .header__menu-list {
   text-transform: uppercase;
   font-family: "Raleway_regular", serif;
 }
@@ -795,8 +795,27 @@ main .wrapper {
   color: #a4a4a4;
 }
 
+.plans__section .title .first-word {
+  color: black;
+}
+.plans__section .title .second-word {
+  color: #f40436;
+}
 .plans__section .container div {
   border: 1px solid purple;
+}
+.plans__section .container .plans__block .section-title-medium {
+  color: white;
+  background-color: #262626;
+}
+.plans__section .container .plans__block .price__part {
+  font-family: "Lato_black", sans-serif;
+  font-size: 50px;
+}
+.plans__section .container .plans__block .buy-btn__part button {
+  font-size: 18px;
+  color: white;
+  background-color: #262626;
 }
 
 /*# sourceMappingURL=style.css.map */

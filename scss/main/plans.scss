@@ -1,8 +1,34 @@
 .plans__section {
+
+    .title {
+        @include diff-color-title($black, $red);
+    }
     
     .container {
         div {
             border: 1px solid purple;
+        }
+
+        .plans__block {
+            .section-title-medium {
+                color: $white;
+                background-color: $raisin-black;
+            }
+
+            .price__part {
+                font-family: $black-regular-font;
+                font-size: 50px;
+            }
+
+            .buy-btn__part {
+                button {
+                    @extend %uppercase-regular;
+                    font-size: 18px;
+                    color: $white;
+
+                    background-color: $raisin-black;
+                }
+            }
         }
     }
 }
