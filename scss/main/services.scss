@@ -1,5 +1,6 @@
 .services__section {
     background-color: $light-raisin-black;
+    position: relative;
 
     &::after {
         @include pseudo_elem(url('/img/main/clients/shapes/scroll bar copy.png'),515px,19px);
@@ -20,10 +21,6 @@
     }
 
     .service__block {
-        div, h2 {
-            border: 1px solid red;
-        }
-
         .service__block-upper-content {
             @extend %flex-row;
             justify-content: start;
@@ -120,7 +117,7 @@
             .text-content {
                 display: inline-block;
                 box-sizing: border-box;
-                
+
                 color: $dark-grey;
             }
         }

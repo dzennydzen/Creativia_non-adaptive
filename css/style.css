@@ -718,9 +718,6 @@ main .wrapper {
   grid-template-columns: repeat(2, 1fr);
   gap: 56px 30px;
 }
-.services__section .service__block div, .services__section .service__block h2 {
-  border: 1px solid red;
-}
 .services__section .service__block .service__block-upper-content {
   justify-content: start;
   align-items: center;
