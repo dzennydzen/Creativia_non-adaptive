@@ -1,6 +1,14 @@
 .services__section {
     background-color: $light-raisin-black;
 
+    &::after {
+        @include pseudo_elem(url('/img/main/clients/shapes/scroll bar copy.png'),515px,19px);
+        
+        left: 50%;
+        bottom: -10px;
+        @include transform(x, -50%);
+    }
+
     .title {
         @include diff-color-title($white, $red);
     }
@@ -101,16 +109,20 @@
             }
         }
 
-        .text-content {
-            color: $dark-grey;
+        .text__block {
+            min-height: 121px;
             background-color: #343434;
 
-            padding-right: 29px;
-            padding-top: 33px;
-            padding-bottom: 32px;
-            padding-left: 29px;
+            @extend %flex-row;
+            @extend %flex-alignment;
+           
 
-            box-sizing: border-box;
+            .text-content {
+                display: inline-block;
+                box-sizing: border-box;
+                
+                color: $dark-grey;
+            }
         }
     }
 }
