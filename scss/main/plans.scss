@@ -18,6 +18,8 @@
             .section-title-medium {
                 color: $white;
                 background-color: $raisin-black;
+                // border: 2px solid #e7e7e7;
+                box-sizing: border-box;  
 
                 padding: 17px 0;
             }
@@ -29,6 +31,17 @@
                 padding: 24px 0;
 
                 background-color: $light-grey;
+                box-sizing: border-box;  
+            }
+
+            .plans__block__part {
+                @for $i from 1 through 9 {  
+                    &:nth-child(#{$i}) {
+                        @if ($i > 2) {
+                            border: 1px solid #e7e7e7;
+                        }
+                    }
+                }
             }
 
             .text-content {

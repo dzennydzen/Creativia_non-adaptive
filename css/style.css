@@ -814,6 +814,7 @@ main .wrapper {
 .plans__section .container .plans__block .section-title-medium {
   color: white;
   background-color: #262626;
+  box-sizing: border-box;
   padding: 17px 0;
 }
 .plans__section .container .plans__block .price__part {
@@ -821,6 +822,28 @@ main .wrapper {
   font-size: 50px;
   padding: 24px 0;
   background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+.plans__section .container .plans__block .plans__block__part:nth-child(3) {
+  border: 1px solid #e7e7e7;
+}
+.plans__section .container .plans__block .plans__block__part:nth-child(4) {
+  border: 1px solid #e7e7e7;
+}
+.plans__section .container .plans__block .plans__block__part:nth-child(5) {
+  border: 1px solid #e7e7e7;
+}
+.plans__section .container .plans__block .plans__block__part:nth-child(6) {
+  border: 1px solid #e7e7e7;
+}
+.plans__section .container .plans__block .plans__block__part:nth-child(7) {
+  border: 1px solid #e7e7e7;
+}
+.plans__section .container .plans__block .plans__block__part:nth-child(8) {
+  border: 1px solid #e7e7e7;
+}
+.plans__section .container .plans__block .plans__block__part:nth-child(9) {
+  border: 1px solid #e7e7e7;
 }
 .plans__section .container .plans__block .text-content {
   padding: 20px 0;
