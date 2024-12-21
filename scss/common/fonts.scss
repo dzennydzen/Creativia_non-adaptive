@@ -15,6 +15,14 @@
 }
 
 @font-face {
+    font-family: 'Raleway_semibold';
+    src: url('/fonts/Raleway-SemiBold.ttf'),
+            url('/fonts/Raleway-SemiBold.woff2') format('woff2');
+    font-weight:bolder;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Raleway_medium';
     src: url('/fonts/Raleway-Medium.ttf'),
             url('/fonts/Raleway-Medium.woff2') format('woff2');
