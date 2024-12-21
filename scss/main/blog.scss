@@ -19,7 +19,14 @@
         @include diff-color-title($black, $red);
     }
 
+    .blog__container {
+        @extend %flex-column;
+    }
+
     .blog__post {
+        @extend %flex-row;
+        
+
         .post__title {
             font-family: Raleway_semibold;
             font-size: 20px;

@@ -97,12 +97,12 @@
   position: absolute;
 }
 
-.services__section .service__block .text__block, .services__section .service__block .service__block-upper-content, .clients__section .container .img-content-box .img-box, .clients__section, .product-features__section .container .product-features__tabs .product-features__tab, .product-features__section .container, .portfolio__section-gallery, .portfolio__section__list, .about__section .img-box .img-box__wrapper, .header__menu-list, .body .container {
+.blog__section .blog__post, .services__section .service__block .text__block, .services__section .service__block .service__block-upper-content, .clients__section .container .img-content-box .img-box, .clients__section, .product-features__section .container .product-features__tabs .product-features__tab, .product-features__section .container, .portfolio__section-gallery, .portfolio__section__list, .about__section .img-box .img-box__wrapper, .header__menu-list, .body .container {
   display: flex;
   flex-direction: row;
 }
 
-.twitter__section .content__wrapper, .teamwork__section .team-member__card, .clients__section .container .img-content-box, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .header .content__wrapper, .body .container-2 .benefit-box {
+.blog__section .blog__container, .twitter__section .content__wrapper, .teamwork__section .team-member__card, .clients__section .container .img-content-box, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .header .content__wrapper, .body .container-2 .benefit-box {
   display: flex;
   flex-direction: column;
 }
