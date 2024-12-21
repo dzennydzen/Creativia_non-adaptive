@@ -913,9 +913,13 @@ main .wrapper {
 }
 .blog__section .blog__section__wrapper {
   padding-top: 110px;
-  padding-right: 0;
+  padding-right: 30px;
   padding-bottom: 167px;
-  padding-left: 0;
+  padding-left: 30px;
+  max-width: 1030px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
 }
 .blog__section .title .first-word {
   color: black;

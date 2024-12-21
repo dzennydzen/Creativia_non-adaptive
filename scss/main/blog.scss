@@ -5,7 +5,14 @@
     }
 
     .blog__section__wrapper {
-        @include padding(110px,0,167px,0);
+        @include padding(110px,30px,167px,30px);
+
+        max-width: 1030px;
+        margin: $center-margin;
+        
+        box-sizing: border-box;
+
+        position: relative;
     }
 
     .title {
