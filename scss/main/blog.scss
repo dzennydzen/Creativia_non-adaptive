@@ -1,0 +1,14 @@
+.blog__section {
+
+    div {
+        border: 1px solid purple;
+    }
+
+    .blog__section__wrapper {
+        @include padding(110px,0,167px,0);
+    }
+
+    .title {
+        @include diff-color-title($black, $red);
+    }
+}

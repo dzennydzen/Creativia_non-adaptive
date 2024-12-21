@@ -907,4 +907,20 @@ main .wrapper {
   z-index: 2;
 }
 
+.blog__section div {
+  border: 1px solid purple;
+}
+.blog__section .blog__section__wrapper {
+  padding-top: 110px;
+  padding-right: 0;
+  padding-bottom: 167px;
+  padding-left: 0;
+}
+.blog__section .title .first-word {
+  color: black;
+}
+.blog__section .title .second-word {
+  color: #f40436;
+}
+
 /*# sourceMappingURL=style.css.map */
