@@ -870,6 +870,7 @@ main .wrapper {
 
 .twitter__section {
   background-color: #262626;
+  position: relative;
 }
 .twitter__section::after {
   background-image: url("/img/main/clients/shapes/scroll bar copy.png");

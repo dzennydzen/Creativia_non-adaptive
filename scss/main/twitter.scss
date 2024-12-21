@@ -1,5 +1,6 @@
 .twitter__section {
     background-color: $raisin-black;
+    position: relative;
 
     &::after {
         @include pseudo_elem(url('/img/main/clients/shapes/scroll bar copy.png'),515px,19px);
