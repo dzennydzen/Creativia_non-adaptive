@@ -7,6 +7,8 @@
         left: 50%;
         bottom: -10px;
         @include transform(x, -50%);
+
+        z-index: 2;
     }
     
     .content__wrapper {
@@ -15,8 +17,11 @@
 
         @include padding(87px, 0, 87px, 0);
 
+        position: relative;
+
         .img-box {
             margin-bottom: 26px;
+            z-index: 2;
 
             svg {
                 width: 39px;
@@ -24,12 +29,19 @@
                 fill: #3d3d3d;
             }
         }
+
+        .bgc_img {
+           position: absolute;
+           bottom: 0;
+        }
     
         .text-content {
             color: $white;
 
             max-width: 645px;
             text-align: center;
+
+            z-index: 2;
         }
     }
 }

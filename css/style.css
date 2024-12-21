@@ -872,25 +872,33 @@ main .wrapper {
   left: 50%;
   bottom: -10px;
   transform: translatex(-50%);
+  z-index: 2;
 }
 .twitter__section .content__wrapper {
   padding-top: 87px;
   padding-right: 0;
   padding-bottom: 87px;
   padding-left: 0;
+  position: relative;
 }
 .twitter__section .content__wrapper .img-box {
   margin-bottom: 26px;
+  z-index: 2;
 }
 .twitter__section .content__wrapper .img-box svg {
   width: 39px;
   height: 31px;
   fill: #3d3d3d;
 }
+.twitter__section .content__wrapper .bgc_img {
+  position: absolute;
+  bottom: 0;
+}
 .twitter__section .content__wrapper .text-content {
   color: white;
   max-width: 645px;
   text-align: center;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
