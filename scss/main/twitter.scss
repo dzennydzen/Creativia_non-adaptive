@@ -1,5 +1,10 @@
 .twitter__section {
     background-color: $raisin-black;
+    background-image: url('/img/main/twitter/twitter_big.png');
+    background-position: 0 0;
+
+    max-height: 295px;
+
     position: relative;
 
     &::after {
@@ -18,22 +23,18 @@
 
         @include padding(87px, 0, 87px, 0);
 
-        position: relative;
-
         .img-box {
-            margin-bottom: 26px;
+            margin-bottom: 0px;
             z-index: 2;
+
+            @include padding(13px,0,20px,0);
+            box-sizing: border-box;
 
             svg {
                 width: 39px;
                 height: 31px;
                 fill: #3d3d3d;
             }
-        }
-
-        .bgc_img {
-           position: absolute;
-           bottom: 0;
         }
     
         .text-content {

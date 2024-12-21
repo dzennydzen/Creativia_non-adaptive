@@ -870,6 +870,9 @@ main .wrapper {
 
 .twitter__section {
   background-color: #262626;
+  background-image: url("/img/main/twitter/twitter_big.png");
+  background-position: 0 0;
+  max-height: 295px;
   position: relative;
 }
 .twitter__section::after {
@@ -886,20 +889,20 @@ main .wrapper {
   padding-right: 0;
   padding-bottom: 87px;
   padding-left: 0;
-  position: relative;
 }
 .twitter__section .content__wrapper .img-box {
-  margin-bottom: 26px;
+  margin-bottom: 0px;
   z-index: 2;
+  padding-top: 13px;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+  box-sizing: border-box;
 }
 .twitter__section .content__wrapper .img-box svg {
   width: 39px;
   height: 31px;
   fill: #3d3d3d;
-}
-.twitter__section .content__wrapper .bgc_img {
-  position: absolute;
-  bottom: 0;
 }
 .twitter__section .content__wrapper .text-content {
   color: white;
