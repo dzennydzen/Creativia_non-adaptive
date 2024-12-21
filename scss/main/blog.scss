@@ -18,4 +18,33 @@
     .title {
         @include diff-color-title($black, $red);
     }
+
+    .blog__post {
+        .post__title {
+            font-family: Raleway_semibold;
+            font-size: 20px;
+            color: $most-dark-grey;
+        }
+
+        .blog__post-btn {
+            @include sizes(120px,40px);
+            border-radius: 0;
+            border-color: transparent;
+
+            @extend .text-content;
+            text-transform: uppercase;
+            color: $white;
+        }
+
+        &:nth-of-type(1) {
+            .blog__post-btn {
+                background-color: $red;
+            }
+        }
+        &:nth-of-type(2) {
+            .blog__post-btn {
+                background-color: $black;
+            }
+        }
+    }
 }
