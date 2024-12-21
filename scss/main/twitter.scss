@@ -1,0 +1,35 @@
+.twitter__section {
+    background-color: $raisin-black;
+
+    &::after {
+        @include pseudo_elem(url('/img/main/clients/shapes/scroll bar copy.png'),515px,19px);
+        
+        left: 50%;
+        bottom: -10px;
+        @include transform(x, -50%);
+    }
+    
+    .content__wrapper {
+        @extend %flex-column;
+        @extend %flex-alignment;
+
+        @include padding(87px, 0, 87px, 0);
+
+        .img-box {
+            margin-bottom: 26px;
+
+            svg {
+                width: 39px;
+                height: 31px;
+                fill: #3d3d3d;
+            }
+        }
+    
+        .text-content {
+            color: $white;
+
+            max-width: 645px;
+            text-align: center;
+        }
+    }
+}
