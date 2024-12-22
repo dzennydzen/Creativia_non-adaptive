@@ -832,7 +832,7 @@
                 </div>
 
                 <div class="adress__content">
-                    <div style="position:relative;overflow:hidden;">
+                    <div class="map" style="position:relative;overflow:hidden;">
                         <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
                         <a href="https://yandex.ru/maps/2/saint-petersburg/house/ulitsa_vsevoloda_vishnevskogo_12a/Z0kYdA5oQU0GQFtjfXV3eX5mYA==/?ll=30.300366%2C59.967945&utm_medium=mapframe&utm_source=maps&z=17.2" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Всеволода Вишневского, 12А — Яндекс Карты</a>
                         <iframe src="https://yandex.ru/map-widget/v1/?ll=30.300366%2C59.967945&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5ODIyNBJn0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0YPQu9C40YbQsCDQktGB0LXQstC-0LvQvtC00LAg0JLQuNGI0L3QtdCy0YHQutC-0LPQviwgMTLQkCIKDRpk8kEVft9vQg%2C%2C&z=17.2" width="100%" height="577px" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
@@ -842,12 +842,12 @@
 
                     
                     <form action="" class="form__container" style="border: 1px solid black">
-                        <h2>Send message</h2>
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                        <button class="form__btn">submit</button>
+                        <h2 class="title">Send message</h2>
+                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="text" id="email" placeholder="Email" required>
+                        <input type="text" id="subject"  placeholder="Subject" required>
+                        <textarea name="" id="message" cols="30" rows="10" placeholder="Your message..." required></textarea>
+                        <button class="form__btn text-content">submit</button>
                     </form>
                 </div>
             </section>

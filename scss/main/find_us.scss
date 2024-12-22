@@ -1,8 +1,47 @@
 .find_us__section {
+    position: relative;
 
     .title {
         margin-top: 100px;
 
         @include diff-color-title($black, $red);
+    }
+
+    .adress_img {
+        position: absolute;
+        top: 0;
+    }
+
+    form {
+        @extend %flex-column;
+        @include sizes(486px, 491px);
+
+        position: absolute;
+        top: 0; 
+        left: 60%;
+
+        background-color: #fff;
+
+        .title {
+            @extend %section-title-medium;
+            text-transform: uppercase;
+            color: $raisin-black;
+            font-weight: 200;
+
+            align-self: start;
+        }
+
+        .form__btn {
+            text-transform: uppercase;
+            color: $white;
+
+            background-color: $black;
+
+            align-self: end;
+        }
+
+        #message {
+            resize: none;
+        }
     }
 }

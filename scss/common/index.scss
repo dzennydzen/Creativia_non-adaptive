@@ -90,6 +90,31 @@
     .link {
         text-decoration: none;
     }
+
+    //buttons 
+
+    button {
+        border-color: transparent;
+        border-radius: 0;
+    }
+
+    //inputs
+
+    input, textarea {
+        border-radius: 0;
+        border: 2px solid $platinum;
+        outline: none;
+
+        box-shadow: none;
+
+        @extend .text-content;
+        color: $raisin-black;
+
+        &::placeholder {
+            color: $raisin-black;
+            opacity: 0.8;
+        }
+    }
     
 }
 
