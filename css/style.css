@@ -85,7 +85,7 @@
   font-family: "Raleway_medium", serif;
 }
 
-.blog__section::after, .twitter__section::after, .services__section::after, .teamwork__section .container:has(> .team-member__card)::after, .clients__section::after, .about__section .container-1::after, .header .content__wrapper::before, .header .content__wrapper::after {
+.follow__section::after, .blog__section::after, .twitter__section::after, .services__section::after, .teamwork__section .container:has(> .team-member__card)::after, .clients__section::after, .about__section .container-1::after, .header .content__wrapper::before, .header .content__wrapper::after {
   content: "";
   background-repeat: no-repeat;
   position: absolute;
@@ -97,7 +97,7 @@
   position: absolute;
 }
 
-.blog__section .blog__post, .services__section .service__block .text__block, .services__section .service__block .service__block-upper-content, .clients__section .container .img-content-box .img-box, .clients__section, .product-features__section .container .product-features__tabs .product-features__tab, .product-features__section .container, .portfolio__section-gallery, .portfolio__section__list, .about__section .img-box .img-box__wrapper, .header__menu-list, .body .container {
+.follow__section .img-box, .blog__section .blog__post, .services__section .service__block .text__block, .services__section .service__block .service__block-upper-content, .clients__section .container .img-content-box .img-box, .clients__section, .product-features__section .container .product-features__tabs .product-features__tab, .product-features__section .container, .portfolio__section-gallery, .portfolio__section__list, .about__section .img-box .img-box__wrapper, .header__menu-list, .body .container {
   display: flex;
   flex-direction: row;
 }
@@ -107,12 +107,12 @@
   flex-direction: column;
 }
 
-.twitter__section .content__wrapper, .services__section .service__block .text__block, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .clients__section, .portfolio__section-gallery, .portfolio__section__list, .body .container-2 .benefit-box {
+.follow__section .img-box, .twitter__section .content__wrapper, .services__section .service__block .text__block, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .clients__section, .portfolio__section-gallery, .portfolio__section__list, .body .container-2 .benefit-box {
   justify-content: center;
   align-items: center;
 }
 
-.clients__section::before, .header::before {
+.follow__section::before, .clients__section::before, .header::before {
   content: "";
   position: absolute;
   top: 0;
@@ -974,13 +974,60 @@ main .wrapper {
   background-color: black;
 }
 
-.follow__section .img-box {
-  border: 1px solid green;
+.follow__section {
+  position: relative;
+  background-image: url("/img/main/follow/images/photodune-3598715-woman-in-red-m.webp");
+  background-repeat: no-repeat;
+}
+.follow__section::before {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.follow__section::after {
+  background-image: url("/img/main/clients/shapes/scroll bar copy.png");
+  width: 515px;
+  height: 19px;
+  left: 50%;
+  bottom: -10px;
+  transform: translatex(-50%);
+  z-index: 2;
+}
+.follow__section .content__wrapper {
+  padding-top: 100px;
+  padding-right: 0;
+  padding-bottom: 90px;
+  padding-left: 0;
+}
+.follow__section .title {
+  padding-bottom: 50px;
+}
+.follow__section .title .first-word {
+  color: white;
+}
+.follow__section .title .second-word {
+  color: #f40436;
 }
 .follow__section .img-box .img__item {
-  border: 1px solid red;
+  color: white;
+  text-align: center;
+}
+.follow__section .img-box .img__item:nth-of-type(1) {
+  margin-right: 50px;
+}
+.follow__section .img-box .img__item:nth-of-type(2) {
+  margin-right: 50px;
+}
+.follow__section .img-box .img__item:nth-of-type(3) {
+  margin-right: 50px;
 }
 .follow__section .img-box .img__item svg {
+  width: 76px;
+  height: 68px;
+}
+.follow__section .img-box .img__item:nth-of-type(2) svg {
+  width: 82px;
+  height: 75px;
+}
+.follow__section .img-box .img__item:nth-of-type(3) svg, .follow__section .img-box .img__item:nth-of-type(4) svg {
   width: 83px;
   height: 75px;
 }

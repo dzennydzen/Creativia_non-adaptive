@@ -1,13 +1,60 @@
 .follow__section {
+    position: relative;
+
+    background-image: url('/img/main/follow/images/photodune-3598715-woman-in-red-m.webp');
+    background-repeat: no-repeat;
+
+    &::before {
+        @include overlay(rgba(0, 0, 0, 0.8));
+    }
+
+    &::after {
+        @include pseudo_elem(url('/img/main/clients/shapes/scroll bar copy.png'),515px,19px);
+        
+        left: 50%;
+        bottom: -10px;
+        @include transform(x, -50%);
+
+        z-index: 2;
+    }
+
+    .content__wrapper {
+        @include padding(100px,0,90px,0);
+    }
+
+    .title {
+        @include diff-color-title($white, $red);
+
+        padding-bottom: 50px;
+    }
+
     .img-box {
-        border: 1px solid green;
+        @extend %flex-row;
+        @extend %flex-alignment;
 
         .img__item {
-            border: 1px solid red;
+            color: $white;
+            text-align: center;
+
+            @include margin-loop(right,1,4,50px);
 
             svg {
-                width: 83px;
-                height: 75px;
+                width: 76px;
+                height: 68px;
+            }
+
+            &:nth-of-type(2) {
+                svg {
+                    width: 82px;
+                    height: 75px;
+                }
+            }
+
+            &:nth-of-type(3), &:nth-of-type(4) {
+                svg {
+                    width: 83px;
+                    height: 75px;
+                }
             }
         }
     }
