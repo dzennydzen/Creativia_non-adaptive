@@ -1032,4 +1032,14 @@ main .wrapper {
   height: 75px;
 }
 
+.find_us__section .title {
+  margin-top: 100px;
+}
+.find_us__section .title .first-word {
+  color: black;
+}
+.find_us__section .title .second-word {
+  color: #f40436;
+}
+
 /*# sourceMappingURL=style.css.map */
