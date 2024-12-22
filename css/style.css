@@ -85,7 +85,7 @@
   font-family: "Raleway_medium", serif;
 }
 
-.twitter__section::after, .services__section::after, .teamwork__section .container:has(> .team-member__card)::after, .clients__section::after, .about__section .container-1::after, .header .content__wrapper::before, .header .content__wrapper::after {
+.blog__section::after, .twitter__section::after, .services__section::after, .teamwork__section .container:has(> .team-member__card)::after, .clients__section::after, .about__section .container-1::after, .header .content__wrapper::before, .header .content__wrapper::after {
   content: "";
   background-repeat: no-repeat;
   position: absolute;
@@ -102,7 +102,7 @@
   flex-direction: row;
 }
 
-.blog__section .blog__container, .twitter__section .content__wrapper, .teamwork__section .team-member__card, .clients__section .container .img-content-box, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .header .content__wrapper, .body .container-2 .benefit-box {
+.blog__section .blog__post .text-box, .blog__section .blog__post .img-box, .blog__section .blog__container, .twitter__section .content__wrapper, .teamwork__section .team-member__card, .clients__section .container .img-content-box, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .header .content__wrapper, .body .container-2 .benefit-box {
   display: flex;
   flex-direction: column;
 }
@@ -911,8 +911,19 @@ main .wrapper {
   z-index: 2;
 }
 
+.blog__section {
+  position: relative;
+}
 .blog__section div {
   border: 1px solid purple;
+}
+.blog__section::after {
+  background-image: url("/img/main/blog/shapes/load_more.png");
+  width: 43px;
+  height: 43px;
+  left: 50%;
+  bottom: 52px;
+  transform: translatex(-50%);
 }
 .blog__section .blog__section__wrapper {
   padding-top: 110px;
@@ -930,10 +941,19 @@ main .wrapper {
 .blog__section .title .second-word {
   color: #f40436;
 }
+.blog__section .blog__post .img-box {
+  margin-right: 30px;
+}
+.blog__section .blog__post .text-box {
+  justify-content: space-between;
+}
 .blog__section .blog__post .post__title {
   font-family: Raleway_semibold;
   font-size: 20px;
   color: #505050;
+}
+.blog__section .blog__post .text-content, .blog__section .blog__post .blog__post-btn {
+  text-align: justify;
 }
 .blog__section .blog__post .blog__post-btn {
   width: 120px;
@@ -942,6 +962,10 @@ main .wrapper {
   border-color: transparent;
   text-transform: uppercase;
   color: white;
+  text-align: center;
+}
+.blog__section .blog__post:nth-of-type(1) {
+  margin-bottom: 50px;
 }
 .blog__section .blog__post:nth-of-type(1) .blog__post-btn {
   background-color: #f40436;
