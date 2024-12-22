@@ -1,0 +1,14 @@
+.follow__section {
+    .img-box {
+        border: 1px solid green;
+
+        .img__item {
+            border: 1px solid red;
+
+            svg {
+                width: 83px;
+                height: 75px;
+            }
+        }
+    }
+}

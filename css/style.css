@@ -974,4 +974,15 @@ main .wrapper {
   background-color: black;
 }
 
+.follow__section .img-box {
+  border: 1px solid green;
+}
+.follow__section .img-box .img__item {
+  border: 1px solid red;
+}
+.follow__section .img-box .img__item svg {
+  width: 83px;
+  height: 75px;
+}
+
 /*# sourceMappingURL=style.css.map */
