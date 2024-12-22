@@ -24,8 +24,7 @@
     }
 
     .blog__post {
-        @extend %flex-row;
-        
+        @extend %flex-row;     
 
         .post__title {
             font-family: Raleway_semibold;
