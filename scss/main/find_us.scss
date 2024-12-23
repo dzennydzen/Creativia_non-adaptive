@@ -9,35 +9,60 @@
 
     .adress_img {
         position: absolute;
-        top: 0;
+        bottom: 15%;
+        left: 10%;
     }
 
     form {
         @extend %flex-column;
         @include sizes(486px, 491px);
+        
+        padding: 50px 45px;
+        box-sizing: border-box;
 
         position: absolute;
-        top: 0; 
-        left: 60%;
+        bottom: 0; 
+        left: 62%;
 
         background-color: #fff;
 
-        .title {
+        .inner__title {
             @extend %section-title-medium;
             text-transform: uppercase;
             color: $raisin-black;
             font-weight: 200;
 
             align-self: start;
+
+            margin-bottom: 49px;
+        }
+
+        input {
+            margin-bottom: 18px;
+            padding: 11px 16px;
+            height: 33px;
+
+            box-sizing: border-box;
+        }
+
+        textarea {
+            margin-bottom: 27px;
+            padding: 11px 16px;
+
+            box-sizing: border-box;
+
+            @include sizes(100%, 88px);
         }
 
         .form__btn {
             text-transform: uppercase;
+            text-align: center;
             color: $white;
 
             background-color: $black;
 
             align-self: end;
+            @include sizes(120px,40px);
         }
 
         #message {
