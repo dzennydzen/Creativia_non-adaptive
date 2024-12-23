@@ -13,6 +13,10 @@
         left: 10%;
     }
 
+    .map {
+        bottom: -3px;
+    }
+
     form {
         @extend %flex-column;
         @include sizes(486px, 491px);

@@ -1,0 +1,26 @@
+.footer__wrapper {
+    background-color: $raisin-black;
+    position: relative;
+
+    padding: 0 70px;
+    box-sizing: border-box;
+
+    @include sizes(100%, 78px);
+    @extend %flex-row;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer__logo {
+        flex: 1;
+
+        object-fit: contain;
+        @include sizes(120px, 23px); 
+    }
+
+    .author {
+        color: #8e8e8e;
+
+        position: absolute;
+        right: 70px;
+    }
+}

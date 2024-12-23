@@ -7,6 +7,9 @@
     margin: $reset-margin;
     position: relative;
 
+    @extend %flex-column;
+    @extend %flex-alignment;
+
     .common__padding {
         @include padding(100px,0,100px,0);
     }
@@ -119,6 +122,8 @@
 }
 
 main {
+    flex-grow: 1;
+    
     .wrapper {
         @include padding(103px, 0, 103px, 0);
     } 
