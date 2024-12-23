@@ -889,6 +889,7 @@ main .wrapper {
 .twitter__section {
   background-color: #262626;
   background-image: url("/img/main/twitter/twitter_big.png");
+  background-repeat: no-repeat;
   background-position: 0 0;
   max-height: 295px;
   position: relative;
