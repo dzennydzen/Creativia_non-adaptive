@@ -181,7 +181,7 @@
 .body .container-2 .benefit-box .text-content, .body .container-2 .benefit-box .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .body .container-2 .benefit-box .blog__post-btn, .body .container-2 .benefit-box input, .body .container-2 .benefit-box textarea {
   text-align: center;
 }
-.body .link {
+.body .link, .body a {
   text-decoration: none;
 }
 .body button {
@@ -225,6 +225,7 @@ main .wrapper {
   position: absolute;
   right: 0;
   left: 0;
+  z-index: 1;
 }
 .header__menu {
   position: relative;
@@ -232,7 +233,6 @@ main .wrapper {
 }
 .header__menu-list {
   list-style-type: none;
-  color: white;
 }
 .header__menu-list li:nth-of-type(1) {
   margin-right: 30px;
@@ -254,6 +254,14 @@ main .wrapper {
 }
 .header__menu-list li:nth-of-type(7) {
   margin-right: 30px;
+}
+.header__menu-list li .link {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.header__menu-list li .link:hover {
+  color: #f40436;
 }
 .header__logo {
   position: absolute;
