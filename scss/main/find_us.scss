@@ -49,6 +49,22 @@
             box-sizing: border-box;
         }
 
+        input, textarea {
+            border-radius: 0;
+            border: 2px solid $platinum;
+            outline: none;
+    
+            box-shadow: none;
+    
+            @extend .text-content;
+            color: $raisin-black;
+    
+            &::placeholder {
+                color: $raisin-black;
+                opacity: 0.8;
+            }
+        }
+
         textarea {
             margin-bottom: 27px;
             padding: 11px 16px;
