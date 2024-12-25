@@ -2,7 +2,6 @@
 //@import "../common/index";
 
 .header {
-    border: 1px solid black;
     height: $header-height;
     position: relative;
 
@@ -15,7 +14,6 @@
         @include overlay(rgba(0, 0, 0, 0.7));
     }
    
-
     //menu
 
     &__menu-block {
@@ -95,6 +93,14 @@
     &__button {
         @include sizes(170px, 52px);
         border: $transparent;
+        transition: all .5s ease;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+
+            outline: 1px ridge $granite-grey; 
+        }
     }
 
 
@@ -113,24 +119,36 @@
     .content__wrapper {
         @include content-wrapper-height(100%);
         @extend %flex-column;
+}
 
-        .header__menu-block {
-            border: 1px solid white;
+//arrows
+
+.arrows {
+    svg {
+        @include sizes(17px, 28px);
+        fill: #a3a4a3;
+
+        position: absolute;
+
+        transition: all .5s ease;
+
+        &:hover {
+            cursor: pointer;
+            fill: $red;
         }
 
-        //arrows
-            &::after {
-                @include pseudo_elem(url('/img/header/shapes/arrow-left (1).svg'),17px,28px);
-                top: 348px;
-                left: -62px;
-            }
-    
-            &::before {
-                @include pseudo_elem(url('/img/header/shapes/arrow-right (1).svg'),17px,28px);
-                top: 348px;
-                right: -62px;    
+        &:nth-child(1) {
+            left: -136px;
+            top: 90px;
+        }
+
+        &:nth-child(2) {
+            right: -136px;
+            top: 90px;
+        }
     }
 }
+
 
     &__text-content {
         display: flex;
@@ -138,7 +156,6 @@
         justify-content: center;
         align-items: center;
         
-        border: 1px solid white;
         @include margin(0, 65px, 0, 65px);
           
         position: absolute;

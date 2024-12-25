@@ -85,7 +85,7 @@
   font-family: "Raleway_medium", serif;
 }
 
-.follow__section::after, .blog__section::after, .twitter__section::after, .services__section::after, .teamwork__section .container:has(> .team-member__card)::after, .clients__section::after, .about__section .container-1::after, .header .content__wrapper::before, .header .content__wrapper::after {
+.follow__section::after, .blog__section::after, .twitter__section::after, .services__section::after, .teamwork__section .container:has(> .team-member__card)::after, .clients__section::after, .about__section .container-1::after {
   content: "";
   background-repeat: no-repeat;
   position: absolute;
@@ -211,7 +211,6 @@ main .wrapper {
 }
 
 .header {
-  border: 1px solid black;
   height: 700px;
   position: relative;
   background-image: url("/img/header/images/photodune-3598715-woman-in-red-m.webp");
@@ -289,6 +288,12 @@ main .wrapper {
   width: 170px;
   height: 52px;
   border: transparent;
+  transition: all 0.5s ease;
+}
+.header__button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  outline: 1px ridge #676767;
 }
 .header__button:first-child {
   background-color: #f40436;
@@ -309,29 +314,30 @@ main .wrapper {
 .header .content__wrapper {
   height: 100%;
 }
-.header .content__wrapper .header__menu-block {
-  border: 1px solid white;
-}
-.header .content__wrapper::after {
-  background-image: url("/img/header/shapes/arrow-left (1).svg");
+.header .arrows svg {
   width: 17px;
   height: 28px;
-  top: 348px;
-  left: -62px;
+  fill: #a3a4a3;
+  position: absolute;
+  transition: all 0.5s ease;
 }
-.header .content__wrapper::before {
-  background-image: url("/img/header/shapes/arrow-right (1).svg");
-  width: 17px;
-  height: 28px;
-  top: 348px;
-  right: -62px;
+.header .arrows svg:hover {
+  cursor: pointer;
+  fill: #f40436;
+}
+.header .arrows svg:nth-child(1) {
+  left: -136px;
+  top: 90px;
+}
+.header .arrows svg:nth-child(2) {
+  right: -136px;
+  top: 90px;
 }
 .header__text-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
   margin-top: 0;
   margin-right: 65px;
   margin-bottom: 0;

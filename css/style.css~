@@ -181,7 +181,7 @@
 .body .container-2 .benefit-box .text-content, .body .container-2 .benefit-box .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .body .container-2 .benefit-box .blog__post-btn, .body .container-2 .benefit-box input, .body .container-2 .benefit-box textarea {
   text-align: center;
 }
-.body .link {
+.body .link, .body a {
   text-decoration: none;
 }
 .body button {
@@ -225,6 +225,7 @@ main .wrapper {
   position: absolute;
   right: 0;
   left: 0;
+  z-index: 1;
 }
 .header__menu {
   position: relative;
@@ -232,10 +233,6 @@ main .wrapper {
 }
 .header__menu-list {
   list-style-type: none;
-  color: white;
-}
-.header__menu-list li {
-  color: red;
 }
 .header__menu-list li:nth-of-type(1) {
   margin-right: 30px;
@@ -258,14 +255,10 @@ main .wrapper {
 .header__menu-list li:nth-of-type(7) {
   margin-right: 30px;
 }
-.header__menu-list li .link,
-.header__menu-list li .link:visited, .header__menu-list li .link:active {
-  text-decoration: none;
-  color: white;
-}
 .header__menu-list li .link {
   color: white;
   text-decoration: none;
+  transition: all 0.5s ease;
 }
 .header__menu-list li .link:hover {
   color: #f40436;
@@ -316,9 +309,6 @@ main .wrapper {
 .header .content__wrapper {
   height: 100%;
 }
-.header .content__wrapper .header__menu-block {
-  border: 1px solid white;
-}
 .header .content__wrapper::after {
   background-image: url("/img/header/shapes/arrow-left (1).svg");
   width: 17px;
@@ -338,7 +328,6 @@ main .wrapper {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
   margin-top: 0;
   margin-right: 65px;
   margin-bottom: 0;
