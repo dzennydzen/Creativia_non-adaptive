@@ -102,12 +102,12 @@
   flex-direction: row;
 }
 
-.find_us__section form, .blog__section .blog__post .text-box, .blog__section .blog__post .img-box, .blog__section .blog__container, .twitter__section .content__wrapper, .teamwork__section .team-member__card, .clients__section .container .img-content-box, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .header .content__wrapper, .body .container-2 .benefit-box, .body {
+.find_us__section form, .blog__section .blog__post .text-box, .blog__section .blog__post .img-box, .blog__section .blog__container, .twitter__section .content__wrapper, .teamwork__section .team-member__card, .clients__section .container .img-content-box, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .header__text-content, .header .content__wrapper, .body .container-2 .benefit-box, .body {
   display: flex;
   flex-direction: column;
 }
 
-.follow__section .img-box, .twitter__section .content__wrapper, .services__section .service__block .text__block, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .clients__section, .portfolio__section-gallery, .portfolio__section__list, .body .container-2 .benefit-box, .body {
+.follow__section .img-box, .twitter__section .content__wrapper, .services__section .service__block .text__block, .clients__section .container .text-content-box .img-content, .clients__section .container .text-content-box, .clients__section, .portfolio__section-gallery, .portfolio__section__list, .header__text-content, .body .container-2 .benefit-box, .body {
   justify-content: center;
   align-items: center;
 }
@@ -334,10 +334,6 @@ main .wrapper {
   top: 90px;
 }
 .header__text-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-top: 0;
   margin-right: 65px;
   margin-bottom: 0;

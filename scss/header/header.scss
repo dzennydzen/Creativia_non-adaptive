@@ -151,10 +151,8 @@
 
 
     &__text-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend %flex-column;
+        @extend %flex-alignment;
         
         @include margin(0, 65px, 0, 65px);
           
