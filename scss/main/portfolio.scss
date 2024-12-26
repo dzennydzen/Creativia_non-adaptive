@@ -16,10 +16,15 @@
         @extend %flex-row;
         @extend %flex-alignment;
 
-
         .portfolio__link {
             @include bold-reg-text-color($dark-grey);
             @include margin-loop(right, 1, 5, 23px);
+
+            transition: all .20s ease-in;
+
+            &:hover {
+                color: $red;
+            }
         }
     } 
 
