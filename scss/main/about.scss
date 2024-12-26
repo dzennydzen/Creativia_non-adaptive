@@ -1,7 +1,5 @@
 .about__section {
 
-        border: 1px solid black;
-
     .title {
         @include diff-color-title($black, $red);
     }
@@ -9,7 +7,6 @@
     .text-content {
         color: $most-dark-grey;
         text-align: left;
-        border: 1px solid black;
     }
 
     .container {
@@ -30,20 +27,48 @@
     }
 
     .container-2 {
-        border: 1px solid red;
         padding-top: 100px;
         margin-top: 100px;
 
         .icon_img {
-            width: 88px;
-            height: 76px;
+            @include sizes(88px,76px);
 
             path:nth-of-type(1) {
                 fill:none;
+
+                stroke: black; 
+                stroke-width: 15px;
+       
+                transition: all .20s ease;
             }
 
             path:nth-of-type(2) {
                 fill: black;
+
+                transition: all .5s ease;
+            }
+
+            path:nth-of-type(3) {
+                fill: black;
+
+                transition: all .5s ease;
+            }
+
+            &:hover {
+                path:nth-of-type(1) {
+                    fill: $red;
+
+                    stroke: $platinum; 
+                    stroke-width: 15px;
+                }
+    
+                path:nth-of-type(2) {
+                    fill: $white;
+                }
+
+                path:nth-of-type(3) {
+                    fill: $white;
+                }
             }
         }
 
@@ -108,6 +133,7 @@
 
             padding: 15px;
             border-top: 2px solid $platinum;
+            box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.25);
 
             display: none;
         }
@@ -131,7 +157,6 @@
 
     .img-box {
         margin-left: 30px;
-        border: 1px solid black;
 
         max-width: 47.7%;
 
@@ -145,8 +170,7 @@
                 object-fit: contain;
             }
 
-            .img__wrapper {
-                
+            .img__wrapper {               
 
                 &:nth-of-type(1) {
                     position: relative;
