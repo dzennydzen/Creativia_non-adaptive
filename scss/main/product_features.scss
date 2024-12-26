@@ -62,8 +62,48 @@
                 @include margin-loop(bottom, 1, 3, 24px);
                 @include padding(10px,0,10px,0);
 
+                transition: all .10s ease;
+
+                &:hover {
+                    background-color: $red;
+                    color: $white;
+                }
+
                 .inner-section__title__big {
                     white-space: nowrap;
+
+                    transition: all .1s ease;
+                    border: 1px solid green;
+
+                    box-sizing: border-box;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+
+                svg {
+                    @include sizes(37px,33px);
+
+                    g:nth-child(1) {
+                        fill: #e6e6e6;
+                        transition: all .10s ease;
+                    }
+
+                    g:nth-child(2) {
+                        fill: #3a3a3a;
+                        transition: all .10s ease;
+                    }
+
+                    &:hover {
+                        g:nth-child(1) {
+                            fill: $white;
+                        }
+    
+                        g:nth-child(2) {
+                            fill: $red;
+                        } 
+                    }
                 }
             }
         }
@@ -74,6 +114,7 @@
 
             .product-features__tab {
                 justify-content: end;
+                text-align: right;
 
                 .icon_img {
                     @include padding(0,20px,0,17px);
