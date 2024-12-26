@@ -44,7 +44,6 @@
     .inner-section__title {
         @include section-title-style($black, none);
         font-weight: normal;
-        border: 1px solid black;
     }
 
     .inner-section__title__big {

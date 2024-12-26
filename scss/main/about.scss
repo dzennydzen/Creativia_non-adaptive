@@ -1,6 +1,6 @@
 .about__section {
 
-    border: 1px solid black;
+        border: 1px solid black;
 
     .title {
         @include diff-color-title($black, $red);
@@ -53,32 +53,64 @@
     }
 
     .extra-content__tab {
-        border: 1px solid $platinum;
-        
+        border: 2px solid $platinum;
+        @include section-title-style($black, none);
+        font-weight: normal;
+
         @extend %flex-row;
-        @extend %flex-alignment;
+        flex-wrap: wrap;
 
-        @include margin-loop (bottom, 1, 3, 10px);
-        @include sizes(100%, 48px);
+        @include margin-loop(bottom, 1, 3, 9px);
 
-        box-sizing: border-box;
+        .inner-section__title {
+            @extend %flex-row;
+            align-items: center;
+            flex: 2;
 
-        .radio-btn__container {
-            padding: 12px 20px;
-            border-right: 1px solid $platinum;
+            @include padding(12px,0,12px,15px);
+            border-left: 2px solid $platinum;
+            box-sizing: border-box;
+
+            max-height: 48px;
+
+            &::before {
+                @include pseudo_elem(url('/img/main/about/shapes/Shape 7.png'),18px,18px);
+                left: 18px; 
+            }
         }
-    }
 
-    .radio_checked__text-content {
-        font-family: $regular-text-font;
-        font-size: 14px;
-        font-weight: 800;
+        .radio-btn {
+            margin: 12px 20px;
+            opacity: 0;
+        }
 
-        color: $most-dark-grey;
+        .radio-btn:checked + .inner-section__title::before {
+            background-image: url('/img/main/about/shapes/Shape 6.png');
+            transition: transform .40s;
+            transform: rotate(180deg);
+        }
+        
+        .radio-btn:checked + .inner-section__title + .radio_checked__text-content {
+            display: block;
+        }
 
-        box-sizing: border-box;
-        padding: 0 15px 15px 15px;
-        margin-top: 0;
+        .radio-btn:checked + .inner-section__title {
+            transition: all .20s ease;
+            color: $red;
+        }
+
+        .radio_checked__text-content {
+            font-family: $regular-text-font;
+            font-size: 14px;
+            font-weight: 800;
+
+            color: $most-dark-grey;
+
+            padding: 15px;
+            border-top: 2px solid $platinum;
+
+            display: none;
+        }
     }
 
     .description-content-box {
