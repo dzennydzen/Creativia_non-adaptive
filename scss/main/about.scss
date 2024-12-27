@@ -37,7 +37,7 @@
                 fill:none;
 
                 stroke: black; 
-                stroke-width: 15px;
+                stroke-width: 10px;
        
                 transition: all .5s ease-in;
             }
@@ -58,8 +58,8 @@
                 path:nth-of-type(1) {
                     fill: $red;
 
-                    stroke: $platinum; 
-                    stroke-width: 15px;
+                    stroke: black; 
+                    stroke-width: 10px;
                 }
     
                 path:nth-of-type(2) {
