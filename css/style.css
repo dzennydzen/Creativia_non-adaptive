@@ -563,6 +563,12 @@ main .wrapper {
   position: absolute;
   left: 33%;
   bottom: 15%;
+  transition: all 0.5s ease;
+}
+.product-features__section .container .img-container .img-container__btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  outline: 1px ridge #676767;
 }
 .product-features__section .container .product-features__tabs {
   padding-top: 93px;

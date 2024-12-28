@@ -46,6 +46,15 @@
                 position: absolute;
                 left: 33%; 
                 bottom: 15%;
+ 
+                transition: all .5s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.05);
+
+                    outline: 1px ridge $granite-grey; 
+                }
             }
         }
         
