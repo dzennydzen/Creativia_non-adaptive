@@ -704,8 +704,15 @@ main .wrapper {
 .clients__section .container .img-content-box .img-box:nth-child(1) {
   margin-bottom: 39px;
 }
+.clients__section .container .img-content-box .img-box img {
+  transition: all 0.15s ease-in;
+}
 .clients__section .container .img-content-box .img-box img:nth-child(1) {
   margin-right: 26px;
+}
+.clients__section .container .img-content-box .img-box img:hover {
+  transform: scale(1.01);
+  outline: 1px inset #676767;
 }
 
 .teamwork__section .title .first-word {

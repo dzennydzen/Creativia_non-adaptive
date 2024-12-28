@@ -83,8 +83,16 @@
                 }
 
                 img {
+                    transition: all .15s ease-in;
+
                     &:nth-child(1) {
                         margin-right: 26px;
+                    }
+
+                    &:hover {
+                        transform: scale(1.01);
+    
+                        outline: 1px inset $granite-grey; 
                     }
                 }
             }
