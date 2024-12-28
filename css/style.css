@@ -737,8 +737,10 @@ main .wrapper {
 }
 .teamwork__section .team-member__card {
   border: 1px solid #e7e7e7;
+  border-radius: 1%;
   box-sizing: border-box;
   text-align: center;
+  transition: all 0.4s ease;
 }
 .teamwork__section .team-member__card:nth-of-type(1) {
   margin-right: 30px;
@@ -748,6 +750,12 @@ main .wrapper {
 }
 .teamwork__section .team-member__card:nth-of-type(3) {
   margin-right: 30px;
+}
+.teamwork__section .team-member__card:hover {
+  cursor: pointer;
+  transform: scale(0.99);
+  outline: 1px outset #a2a2a2;
+  box-shadow: 5px 5px 6px #a2a2a2;
 }
 .teamwork__section .team-member__card img {
   max-width: 100%;

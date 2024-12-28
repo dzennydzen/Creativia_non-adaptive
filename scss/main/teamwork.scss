@@ -23,6 +23,7 @@
     
     .team-member__card {
         border: 1px solid #e7e7e7;
+        border-radius: 1%;
 
         box-sizing: border-box;
 
@@ -30,6 +31,16 @@
         @extend %flex-column;
         
         text-align: center;
+
+        transition: all .40s ease;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(0.99);
+
+            outline: 1px outset $silver-grey;
+            box-shadow: 5px 5px 6px $silver-grey;
+        }
 
         img {
             max-width: 100%;
