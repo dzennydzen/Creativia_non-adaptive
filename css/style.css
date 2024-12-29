@@ -1111,6 +1111,11 @@ main .wrapper {
   font-family: Raleway_semibold;
   font-size: 20px;
   color: #505050;
+  transition: all 0.2s ease;
+}
+.blog__section .blog__post .post__title:hover {
+  color: #262626;
+  text-shadow: 0px 2px 2px #a2a2a2;
 }
 .blog__section .blog__post .text-content, .blog__section .blog__post .find_us__section form input, .find_us__section form .blog__section .blog__post input, .blog__section .blog__post .find_us__section form textarea, .find_us__section form .blog__section .blog__post textarea, .blog__section .blog__post .blog__post-btn {
   text-align: justify;
