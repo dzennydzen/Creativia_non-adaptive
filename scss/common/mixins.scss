@@ -82,6 +82,15 @@
     transform: translate#{$axis}($value);
 }
 
+@mixin btn-hover-style($outline-style, $color) {
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+    
+        outline: 1px $outline-style $color;  
+    }    
+}
+
 //pseudo-elements
 
 @mixin pseudo_elem($bgi, $width, $height) {

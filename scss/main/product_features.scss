@@ -39,12 +39,7 @@
  
                 transition: all .5s ease;
 
-                &:hover {
-                    cursor: pointer;
-                    transform: scale(1.05);
-
-                    outline: 1px ridge $granite-grey; 
-                }
+                @include btn-hover-style(ridge, $granite-grey);
             }
         }
         

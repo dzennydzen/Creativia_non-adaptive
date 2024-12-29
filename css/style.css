@@ -561,7 +561,7 @@ main .wrapper {
 }
 .product-features__section .container .img-container .img-container__btn:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.02);
   outline: 1px ridge #676767;
 }
 .product-features__section .container .product-features__tabs {
@@ -1017,6 +1017,8 @@ main .wrapper {
   cursor: pointer;
   transform: scale(1.02);
   outline: 1px outset #a4a4a4;
+}
+.plans__section .container .plans__block .buy-btn__part button:hover {
   box-shadow: 5px 5px 6px #a4a4a4;
   background-color: #f40436;
 }
@@ -1071,9 +1073,6 @@ main .wrapper {
 
 .blog__section {
   position: relative;
-}
-.blog__section div {
-  border: 1px solid purple;
 }
 .blog__section::after {
   background-image: url("/img/main/blog/shapes/load_more.png");
