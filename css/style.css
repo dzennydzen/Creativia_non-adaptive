@@ -52,7 +52,7 @@
   font-family: "Raleway_regular", serif;
 }
 
-.header .text-content, .header .find_us__section form input, .find_us__section form .header input, .header .find_us__section form textarea, .find_us__section form .header textarea, .header .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .header .blog__post-btn, .body .text-content, .body .find_us__section form input, .find_us__section form .body input, .body .find_us__section form textarea, .find_us__section form .body textarea, .body .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .body .blog__post-btn {
+.find_us__section form input, .find_us__section form textarea, .header .text-content, .header .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .header .blog__post-btn, .body .text-content, .body .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .body .blog__post-btn {
   font-family: "Lato_regular", sans-serif;
   font-size: 16px;
 }
@@ -174,10 +174,10 @@
   margin-top: 50px;
   margin-bottom: 100px;
 }
-.body .text-content, .body .find_us__section form input, .find_us__section form .body input, .body .find_us__section form textarea, .find_us__section form .body textarea, .body .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .body .blog__post-btn {
+.body .text-content, .body .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .body .blog__post-btn {
   margin: 0;
 }
-.body .container-2 .benefit-box .text-content, .body .container-2 .benefit-box .find_us__section form input, .find_us__section form .body .container-2 .benefit-box input, .body .container-2 .benefit-box .find_us__section form textarea, .find_us__section form .body .container-2 .benefit-box textarea, .body .container-2 .benefit-box .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .body .container-2 .benefit-box .blog__post-btn {
+.body .container-2 .benefit-box .text-content, .body .container-2 .benefit-box .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .body .container-2 .benefit-box .blog__post-btn {
   text-align: center;
 }
 .body .link, .body a {
@@ -262,7 +262,7 @@ main .wrapper {
   left: 66px;
   top: 36px;
 }
-.header .text-content, .header .find_us__section form input, .find_us__section form .header input, .header .find_us__section form textarea, .find_us__section form .header textarea, .header .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .header .blog__post-btn {
+.header .text-content, .header .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .header .blog__post-btn {
   color: white;
   text-align: center;
 }
@@ -333,7 +333,7 @@ main .wrapper {
   top: 50%;
   transform: translateY(-40%);
 }
-.header__text-content .text-content, .header__text-content .find_us__section form input, .find_us__section form .header__text-content input, .header__text-content .find_us__section form textarea, .find_us__section form .header__text-content textarea, .header__text-content .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .header__text-content .blog__post-btn {
+.header__text-content .text-content, .header__text-content .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .header__text-content .blog__post-btn {
   margin-top: 46px;
 }
 
@@ -343,7 +343,7 @@ main .wrapper {
 .about__section .title .second-word {
   color: #f40436;
 }
-.about__section .text-content, .about__section .find_us__section form input, .find_us__section form .about__section input, .about__section .find_us__section form textarea, .find_us__section form .about__section textarea, .about__section .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .about__section .blog__post-btn {
+.about__section .text-content, .about__section .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .about__section .blog__post-btn {
   color: #505050;
   text-align: left;
 }
@@ -458,7 +458,7 @@ main .wrapper {
 .about__section .description-content-box {
   max-width: 50%;
 }
-.about__section .description-content-box .text-content, .about__section .description-content-box .find_us__section form input, .find_us__section form .about__section .description-content-box input, .about__section .description-content-box .find_us__section form textarea, .find_us__section form .about__section .description-content-box textarea, .about__section .description-content-box .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .about__section .description-content-box .blog__post-btn {
+.about__section .description-content-box .text-content, .about__section .description-content-box .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .about__section .description-content-box .blog__post-btn {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 41px;
@@ -681,7 +681,7 @@ main .wrapper {
 .clients__section .container .text-content-box .inner-section__title__big {
   color: white;
 }
-.clients__section .container .text-content-box .text-content, .clients__section .container .text-content-box .find_us__section form input, .find_us__section form .clients__section .container .text-content-box input, .clients__section .container .text-content-box .find_us__section form textarea, .find_us__section form .clients__section .container .text-content-box textarea, .clients__section .container .text-content-box .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .clients__section .container .text-content-box .blog__post-btn {
+.clients__section .container .text-content-box .text-content, .clients__section .container .text-content-box .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .clients__section .container .text-content-box .blog__post-btn {
   text-align: center;
   color: #a4a4a4;
   margin-top: 51px;
@@ -772,7 +772,7 @@ main .wrapper {
   margin-bottom: 25px;
   margin-left: 0;
 }
-.teamwork__section .team-member__card .text-content, .teamwork__section .team-member__card .find_us__section form input, .find_us__section form .teamwork__section .team-member__card input, .teamwork__section .team-member__card .find_us__section form textarea, .find_us__section form .teamwork__section .team-member__card textarea, .teamwork__section .team-member__card .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .teamwork__section .team-member__card .blog__post-btn {
+.teamwork__section .team-member__card .text-content, .teamwork__section .team-member__card .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .teamwork__section .team-member__card .blog__post-btn {
   margin-bottom: 32px;
 }
 .teamwork__section .team-member__card .extra-content {
@@ -813,7 +813,7 @@ main .wrapper {
   margin-bottom: 26px;
   margin-left: 0;
 }
-.teamwork__section .container:last-child .skills__item .text-content, .teamwork__section .container:last-child .skills__item .find_us__section form input, .find_us__section form .teamwork__section .container:last-child .skills__item input, .teamwork__section .container:last-child .skills__item .find_us__section form textarea, .find_us__section form .teamwork__section .container:last-child .skills__item textarea, .teamwork__section .container:last-child .skills__item .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .teamwork__section .container:last-child .skills__item .blog__post-btn {
+.teamwork__section .container:last-child .skills__item .text-content, .teamwork__section .container:last-child .skills__item .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .teamwork__section .container:last-child .skills__item .blog__post-btn {
   color: #505050;
 }
 
@@ -908,7 +908,7 @@ main .wrapper {
   min-height: 121px;
   background-color: #343434;
 }
-.services__section .service__block .text__block .text-content, .services__section .service__block .text__block .find_us__section form input, .find_us__section form .services__section .service__block .text__block input, .services__section .service__block .text__block .find_us__section form textarea, .find_us__section form .services__section .service__block .text__block textarea, .services__section .service__block .text__block .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .services__section .service__block .text__block .blog__post-btn {
+.services__section .service__block .text__block .text-content, .services__section .service__block .text__block .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .services__section .service__block .text__block .blog__post-btn {
   display: inline-block;
   box-sizing: border-box;
   color: #a4a4a4;
@@ -999,7 +999,7 @@ main .wrapper {
   text-shadow: 3px 4px 2px #a4a4a4;
   background-color: #e7e7e7;
 }
-.plans__section .container .plans__block .text-content, .plans__section .container .plans__block .find_us__section form input, .find_us__section form .plans__section .container .plans__block input, .plans__section .container .plans__block .find_us__section form textarea, .find_us__section form .plans__section .container .plans__block textarea, .plans__section .container .plans__block .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .plans__section .container .plans__block .blog__post-btn {
+.plans__section .container .plans__block .text-content, .plans__section .container .plans__block .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .plans__section .container .plans__block .blog__post-btn {
   padding: 20px 0;
   box-sizing: border-box;
 }
@@ -1067,7 +1067,7 @@ main .wrapper {
 .twitter__section .content__wrapper .img-box svg:hover {
   fill: #f40436;
 }
-.twitter__section .content__wrapper .text-content, .twitter__section .content__wrapper .find_us__section form input, .find_us__section form .twitter__section .content__wrapper input, .twitter__section .content__wrapper .find_us__section form textarea, .find_us__section form .twitter__section .content__wrapper textarea, .twitter__section .content__wrapper .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .twitter__section .content__wrapper .blog__post-btn {
+.twitter__section .content__wrapper .text-content, .twitter__section .content__wrapper .blog__section .blog__post .blog__post-btn, .blog__section .blog__post .twitter__section .content__wrapper .blog__post-btn {
   color: white;
   max-width: 645px;
   text-align: center;
@@ -1117,7 +1117,7 @@ main .wrapper {
   color: #262626;
   text-shadow: 0px 2px 2px #a2a2a2;
 }
-.blog__section .blog__post .text-content, .blog__section .blog__post .find_us__section form input, .find_us__section form .blog__section .blog__post input, .blog__section .blog__post .find_us__section form textarea, .find_us__section form .blog__section .blog__post textarea, .blog__section .blog__post .blog__post-btn {
+.blog__section .blog__post .text-content, .blog__section .blog__post .blog__post-btn {
   text-align: justify;
 }
 .blog__section .blog__post .blog__post-btn {
@@ -1271,10 +1271,14 @@ main .wrapper {
   outline: none;
   box-shadow: none;
   color: #262626;
+  transition: all 0.1s ease;
 }
 .find_us__section form input::placeholder, .find_us__section form textarea::placeholder {
   color: #262626;
   opacity: 0.8;
+}
+.find_us__section form input:hover, .find_us__section form input:focus, .find_us__section form textarea:hover, .find_us__section form textarea:focus {
+  border: 2px solid #a2a2a2;
 }
 .find_us__section form textarea {
   margin-bottom: 27px;
@@ -1289,8 +1293,17 @@ main .wrapper {
   color: white;
   background-color: black;
   align-self: end;
+  transition: all 0.3s ease;
   width: 120px;
   height: 40px;
+}
+.find_us__section form .form__btn:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  outline: 1px ridge #a4a4a4;
+}
+.find_us__section form .form__btn:hover {
+  box-shadow: 5px 5px 6px #a4a4a4;
 }
 .find_us__section form #message {
   resize: none;

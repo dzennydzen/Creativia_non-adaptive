@@ -56,12 +56,18 @@
     
             box-shadow: none;
     
-            @extend .text-content;
+            @extend %regular-text-content;
             color: $raisin-black;
+
+            transition: all .1s ease;
     
             &::placeholder {
                 color: $raisin-black;
                 opacity: 0.8;
+            }
+
+            &:hover, &:focus {
+                border: 2px solid $silver-grey;
             }
         }
 
@@ -82,7 +88,14 @@
             background-color: $black;
 
             align-self: end;
+            transition: all .3s ease;
+
             @include sizes(120px,40px);
+            @include btn-hover-style(ridge, $dark-grey);
+            
+            &:hover {
+                box-shadow: 5px 5px 6px $dark-grey;
+            }
         }
 
         #message {
