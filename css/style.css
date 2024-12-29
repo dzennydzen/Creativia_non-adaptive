@@ -1247,6 +1247,7 @@ main .wrapper {
   height: 491px;
   padding: 50px 45px;
   box-sizing: border-box;
+  box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0;
   left: 62%;
