@@ -32,9 +32,14 @@
             box-sizing: border-box;
 
             svg {
-                width: 39px;
-                height: 31px;
+                @include sizes(39px, 31px);
                 fill: #3d3d3d;
+
+                transition: all .15s ease-out;
+
+                &:hover {
+                    fill: $red;
+                }
             }
         }
     
