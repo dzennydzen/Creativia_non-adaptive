@@ -854,48 +854,52 @@ main .wrapper {
   width: 66px;
   height: 57px;
   fill: #a4a4a4;
+  transition: all 0.5s ease;
+}
+.services__section .service__block .img__block svg:hover {
+  fill: #f40436;
 }
 .services__section .service__block:first-child .img__block::before {
   background-image: url("/img/main/services/shapes/1.png");
   width: 31px;
   height: 23px;
   top: 30%;
-  left: 25%;
+  left: 26%;
 }
 .services__section .service__block:nth-of-type(2) .img__block::before {
   background-image: url("/img/main/services/shapes/2.png");
   width: 24px;
   height: 28px;
   top: 28%;
-  left: 31.5%;
+  left: 33%;
 }
 .services__section .service__block:nth-of-type(3) .img__block::before {
   background-image: url("/img/main/services/shapes/3.png");
   width: 35px;
   height: 35px;
   top: 19.5%;
-  left: 23.4%;
+  left: 24%;
 }
 .services__section .service__block:nth-of-type(4) .img__block::before {
   background-image: url("/img/main/services/shapes/4.png");
   width: 23px;
   height: 28px;
   top: 25%;
-  left: 32.6%;
+  left: 33%;
 }
 .services__section .service__block:nth-of-type(5) .img__block::before {
   background-image: url("/img/main/services/shapes/5.png");
   width: 23px;
   height: 24px;
   top: 28%;
-  left: 30%;
+  left: 34%;
 }
 .services__section .service__block:last-child .img__block::before {
   background-image: url("/img/main/services/shapes/6.png");
   width: 35px;
   height: 24px;
   top: 28%;
-  left: 22%;
+  left: 24.2%;
 }
 .services__section .service__block .text__block {
   min-height: 121px;

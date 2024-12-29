@@ -43,6 +43,12 @@
                 width: 66px;
                 height: 57px;
                 fill: $dark-grey;
+
+                transition: all .5s ease;
+
+                &:hover {
+                    fill: $red;
+                }
             }
         }
 
@@ -51,7 +57,7 @@
                 &::before {
                     @include service_pseudo__img(url('/img/main/services/shapes/1.png'),31px,23px);
                     top: 30%;
-                    left: 25%;
+                    left: 26%;
                 }
             }
         }
@@ -61,7 +67,7 @@
                 &::before {
                     @include service_pseudo__img(url('/img/main/services/shapes/2.png'),24px,28px);
                     top: 28%;
-                    left: 31.5%;
+                    left: 33%;
                 }
             }
         }
@@ -71,7 +77,7 @@
                 &::before {
                     @include service_pseudo__img(url('/img/main/services/shapes/3.png'),35px,35px);
                     top: 19.5%;
-                    left: 23.4%;
+                    left: 24%;
                 }
             }
         }
@@ -81,7 +87,7 @@
                 &::before {
                     @include service_pseudo__img(url('/img/main/services/shapes/4.png'),23px,28px);
                     top: 25%;
-                    left: 32.6%;
+                    left: 33%;
                 }
             }
         }
@@ -91,7 +97,7 @@
                 &::before {
                     @include service_pseudo__img(url('/img/main/services/shapes/5.png'),23px,24px);
                     top: 28%;
-                    left: 30%;
+                    left: 34%;
                 }
             }
         }
@@ -101,7 +107,7 @@
                 &::before {
                     @include service_pseudo__img(url('/img/main/services/shapes/6.png'),35px,24px);
                     top: 28%;
-                    left: 22%;
+                    left: 24.2%;
                 }
             }
         }
