@@ -32,13 +32,29 @@
 
                 background-color: $light-grey;
                 box-sizing: border-box;  
+
+                transition: all .15s ease;
+
+                &:hover {
+                    background-color: $red;
+                    color: $white;
+                }
             }
 
             .plans__block__part {
+                transition: all .10s ease;
+
                 @for $i from 1 through 9 {  
                     &:nth-child(#{$i}) {
-                        @if ($i > 2) {
+                        @if ($i > 2 and $i < 9) {
                             border: 1px solid #e7e7e7;
+
+                            &:hover {
+                                color: $raisin-black;
+                                text-shadow: 3px 4px 2px $dark-grey;
+
+                                background-color: $platinum;
+                            }
                         }
                     }
                 }
@@ -64,6 +80,18 @@
                     height: 38px;
 
                     border: transparent;
+
+                    transition: all .5s ease;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.02);
+    
+                        outline: 1px outset $dark-grey; 
+                        box-shadow: 5px 5px 6px $dark-grey;
+
+                        background-color: $red;
+                    }
                 }
             }
         }
