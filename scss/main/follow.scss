@@ -41,6 +41,30 @@
             svg {
                 width: 76px;
                 height: 68px;
+
+                transition: all .5s ease;
+
+                path:nth-child(1) {
+                    fill: none;
+
+                    transition: all .5s ease;
+                }
+
+                path:nth-child(2) {
+                    fill: $red;
+
+                    transition: all .5s ease;
+                }
+
+                &:hover {
+                    path:nth-child(1) {
+                        fill: $red;
+                    }
+    
+                    path:nth-child(2) {
+                        fill: $white;
+                    } 
+                }
             }
 
             &:nth-of-type(2) {

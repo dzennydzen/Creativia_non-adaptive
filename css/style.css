@@ -1197,6 +1197,21 @@ main .wrapper {
 .follow__section .img-box .img__item svg {
   width: 76px;
   height: 68px;
+  transition: all 0.5s ease;
+}
+.follow__section .img-box .img__item svg path:nth-child(1) {
+  fill: none;
+  transition: all 0.5s ease;
+}
+.follow__section .img-box .img__item svg path:nth-child(2) {
+  fill: #f40436;
+  transition: all 0.5s ease;
+}
+.follow__section .img-box .img__item svg:hover path:nth-child(1) {
+  fill: #f40436;
+}
+.follow__section .img-box .img__item svg:hover path:nth-child(2) {
+  fill: white;
 }
 .follow__section .img-box .img__item:nth-of-type(2) svg {
   width: 82px;
