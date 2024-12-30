@@ -92,7 +92,7 @@
 
     &__button {
         @include sizes(170px, 52px);
-        border: $transparent;
+        border: transparent;
         transition: all .5s ease;
 
         &:hover {
