@@ -3,7 +3,7 @@
     position: relative;
 
     &::after {
-        @include pseudo_elem(url('/img/main/clients/shapes/scroll bar copy.png'),515px,19px);
+        @include pseudo_elem(url('img/main/clients/shapes/scroll bar copy.png'),515px,19px);
         
         left: 50%;
         bottom: -10px;
@@ -55,7 +55,7 @@
         &:first-child {
             .img__block {
                 &::before {
-                    @include service_pseudo__img(url('/img/main/services/shapes/1.png'),31px,23px);
+                    @include service_pseudo__img(url('img/main/services/shapes/1.png'),31px,23px);
                     top: 30%;
                     left: 26%;
                 }
@@ -65,7 +65,7 @@
         &:nth-of-type(2) {
             .img__block {
                 &::before {
-                    @include service_pseudo__img(url('/img/main/services/shapes/2.png'),24px,28px);
+                    @include service_pseudo__img(url('img/main/services/shapes/2.png'),24px,28px);
                     top: 28%;
                     left: 33%;
                 }
@@ -75,7 +75,7 @@
         &:nth-of-type(3) {
             .img__block {
                 &::before {
-                    @include service_pseudo__img(url('/img/main/services/shapes/3.png'),35px,35px);
+                    @include service_pseudo__img(url('img/main/services/shapes/3.png'),35px,35px);
                     top: 19.5%;
                     left: 24%;
                 }
@@ -85,7 +85,7 @@
         &:nth-of-type(4) {
             .img__block {
                 &::before {
-                    @include service_pseudo__img(url('/img/main/services/shapes/4.png'),23px,28px);
+                    @include service_pseudo__img(url('img/main/services/shapes/4.png'),23px,28px);
                     top: 25%;
                     left: 33%;
                 }
@@ -95,7 +95,7 @@
         &:nth-of-type(5) {
             .img__block {
                 &::before {
-                    @include service_pseudo__img(url('/img/main/services/shapes/5.png'),23px,24px);
+                    @include service_pseudo__img(url('img/main/services/shapes/5.png'),23px,24px);
                     top: 28%;
                     left: 34%;
                 }
@@ -105,7 +105,7 @@
         &:last-child {
             .img__block {
                 &::before {
-                    @include service_pseudo__img(url('/img/main/services/shapes/6.png'),35px,24px);
+                    @include service_pseudo__img(url('img/main/services/shapes/6.png'),35px,24px);
                     top: 28%;
                     left: 24.2%;
                 }

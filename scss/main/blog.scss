@@ -3,7 +3,7 @@
     position: relative;
 
     &::after {
-        @include pseudo_elem(url('/img/main/blog/shapes/load_more.png'),43px,43px);
+        @include pseudo_elem(url('img/main/blog/shapes/load_more.png'),43px,43px);
         
         left: 50%;
         bottom: 52px;
