@@ -1,5 +1,5 @@
 .clients__section {  
-    background-image: url('img/main/clients/images/photodune-3414776-business-group-m.webp');
+    background-image: url('../img/main/clients/images/photodune-3414776-business-group-m.webp');
     background-repeat: no-repeat;
     height: 652px;
 
@@ -10,7 +10,7 @@
     }
 
     &::after {
-        @include pseudo_elem(url('img/main/clients/shapes/scroll bar copy.png'),515px,19px);
+        @include pseudo_elem(url('../img/main/clients/shapes/scroll bar copy.png'),515px,19px);
         
         bottom: -10px;
     }

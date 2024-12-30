@@ -1,7 +1,7 @@
 .follow__section {
     position: relative;
 
-    background-image: url('img/main/follow/images/photodune-3598715-woman-in-red-m.webp');
+    background-image: url('../img/main/follow/images/photodune-3598715-woman-in-red-m.webp');
     background-repeat: no-repeat;
 
     &::before {
@@ -9,7 +9,7 @@
     }
 
     &::after {
-        @include pseudo_elem(url('img/main/clients/shapes/scroll bar copy.png'),515px,19px);
+        @include pseudo_elem(url('../img/main/clients/shapes/scroll bar copy.png'),515px,19px);
         
         left: 50%;
         bottom: -10px;

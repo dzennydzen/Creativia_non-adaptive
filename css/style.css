@@ -1,42 +1,42 @@
 @font-face {
   font-family: "Raleway_regular";
-  src: url("fonts/Raleway-VariableFont_wght.ttf") format("ttf"), url("fonts/Raleway-Regular.woff2") format("woff2");
+  src: url("../fonts/Raleway-VariableFont_wght.ttf") format("ttf"), url("../fonts/Raleway-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Raleway_bold";
-  src: url("fonts/Raleway-Bold.ttf"), url("fonts/Raleway-Bold.woff2") format("woff2");
+  src: url("../fonts/Raleway-Bold.ttf"), url("../fonts/Raleway-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Raleway_semibold";
-  src: url("fonts/Raleway-SemiBold.ttf"), url("fonts/Raleway-SemiBold.woff2") format("woff2");
+  src: url("../fonts/Raleway-SemiBold.ttf"), url("../fonts/Raleway-SemiBold.woff2") format("woff2");
   font-weight: bolder;
   font-style: normal;
 }
 @font-face {
   font-family: "Raleway_medium";
-  src: url("fonts/Raleway-Medium.ttf"), url("fonts/Raleway-Medium.woff2") format("woff2");
+  src: url("../fonts/Raleway-Medium.ttf"), url("../fonts/Raleway-Medium.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Lato_regular";
-  src: url("fonts/Lato-Regular.ttf"), url("fonts/Lato-Regular.woff2") format("woff2");
+  src: url("../fonts/Lato-Regular.ttf"), url("../fonts/Lato-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Lato_bold";
-  src: url("fonts/Lato-Bold.ttf"), url("fonts/Lato-Bold.woff2") format("woff2");
+  src: url("../fonts/Lato-Bold.ttf"), url("../fonts/Lato-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Lato_black";
-  src: url("fonts/Lato-Black.ttf"), url("fonts/lato-black.woff2") format("woff2");
+  src: url("../fonts/Lato-Black.ttf"), url("../fonts/lato-black.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -189,7 +189,7 @@ main .wrapper {
 .header {
   height: 700px;
   position: relative;
-  background-image: url("img/header/images/photodune-3598715-woman-in-red-m.webp");
+  background-image: url("../img/header/images/photodune-3598715-woman-in-red-m.webp");
   background-repeat: no-repeat;
 }
 .header::before {
@@ -338,7 +338,7 @@ main .wrapper {
   position: relative;
 }
 .about__section .container-1::after {
-  background-image: url("img/main/about/shapes/scroll bar.png");
+  background-image: url("../img/main/about/shapes/scroll bar.png");
   width: 515px;
   height: 19px;
   bottom: -110px;
@@ -409,7 +409,7 @@ main .wrapper {
   max-height: 48px;
 }
 .about__section .extra-content__tab .inner-section__title::before, .about__section .extra-content__tab .body .inner-section__title__big::before, .body .about__section .extra-content__tab .inner-section__title__big::before {
-  background-image: url("img/main/about/shapes/Shape 7.png");
+  background-image: url("../img/main/about/shapes/Shape 7.png");
   width: 18px;
   height: 18px;
   left: 18px;
@@ -419,7 +419,7 @@ main .wrapper {
   opacity: 0;
 }
 .about__section .extra-content__tab .radio-btn:checked + .inner-section__title::before, .about__section .extra-content__tab .body .radio-btn:checked + .inner-section__title__big::before, .body .about__section .extra-content__tab .radio-btn:checked + .inner-section__title__big::before {
-  background-image: url("img/main/about/shapes/Shape 6.png");
+  background-image: url("../img/main/about/shapes/Shape 6.png");
   transition: transform 0.4s;
   transform: rotate(180deg);
 }
@@ -630,7 +630,7 @@ main .wrapper {
 }
 
 .clients__section {
-  background-image: url("img/main/clients/images/photodune-3414776-business-group-m.webp");
+  background-image: url("../img/main/clients/images/photodune-3414776-business-group-m.webp");
   background-repeat: no-repeat;
   height: 652px;
   position: relative;
@@ -639,7 +639,7 @@ main .wrapper {
   background-color: rgba(0, 0, 0, 0.9);
 }
 .clients__section::after {
-  background-image: url("img/main/clients/shapes/scroll bar copy.png");
+  background-image: url("../img/main/clients/shapes/scroll bar copy.png");
   width: 515px;
   height: 19px;
   bottom: -10px;
@@ -716,7 +716,7 @@ main .wrapper {
   position: relative;
 }
 .teamwork__section .container:has(> .team-member__card)::after {
-  background-image: url("img/main/about/shapes/scroll bar.png");
+  background-image: url("../img/main/about/shapes/scroll bar.png");
   width: 515px;
   height: 19px;
   bottom: -119px;
@@ -807,7 +807,7 @@ main .wrapper {
   position: relative;
 }
 .services__section::after {
-  background-image: url("img/main/clients/shapes/scroll bar copy.png");
+  background-image: url("../img/main/clients/shapes/scroll bar copy.png");
   width: 515px;
   height: 19px;
   left: 50%;
@@ -848,42 +848,42 @@ main .wrapper {
   fill: #f40436;
 }
 .services__section .service__block:first-child .img__block::before {
-  background-image: url("img/main/services/shapes/1.png");
+  background-image: url("../img/main/services/shapes/1.png");
   width: 31px;
   height: 23px;
   top: 30%;
   left: 26%;
 }
 .services__section .service__block:nth-of-type(2) .img__block::before {
-  background-image: url("img/main/services/shapes/2.png");
+  background-image: url("../img/main/services/shapes/2.png");
   width: 24px;
   height: 28px;
   top: 28%;
-  left: 33%;
+  left: 31.5%;
 }
 .services__section .service__block:nth-of-type(3) .img__block::before {
-  background-image: url("img/main/services/shapes/3.png");
+  background-image: url("../img/main/services/shapes/3.png");
   width: 35px;
   height: 35px;
   top: 19.5%;
   left: 24%;
 }
 .services__section .service__block:nth-of-type(4) .img__block::before {
-  background-image: url("img/main/services/shapes/4.png");
+  background-image: url("../img/main/services/shapes/4.png");
   width: 23px;
   height: 28px;
   top: 25%;
   left: 33%;
 }
 .services__section .service__block:nth-of-type(5) .img__block::before {
-  background-image: url("img/main/services/shapes/5.png");
+  background-image: url("../img/main/services/shapes/5.png");
   width: 23px;
   height: 24px;
   top: 28%;
   left: 34%;
 }
 .services__section .service__block:last-child .img__block::before {
-  background-image: url("img/main/services/shapes/6.png");
+  background-image: url("../img/main/services/shapes/6.png");
   width: 35px;
   height: 24px;
   top: 28%;
@@ -1013,7 +1013,7 @@ main .wrapper {
 
 .twitter__section {
   background-color: #262626;
-  background-image: url("img/main/twitter/twitter_big.png");
+  background-image: url("../img/main/twitter/twitter_big.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   max-height: 295px;
@@ -1136,14 +1136,14 @@ main .wrapper {
 
 .follow__section {
   position: relative;
-  background-image: url("img/main/follow/images/photodune-3598715-woman-in-red-m.webp");
+  background-image: url("../img/main/follow/images/photodune-3598715-woman-in-red-m.webp");
   background-repeat: no-repeat;
 }
 .follow__section::before {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .follow__section::after {
-  background-image: url("img/main/clients/shapes/scroll bar copy.png");
+  background-image: url("../img/main/clients/shapes/scroll bar copy.png");
   width: 515px;
   height: 19px;
   left: 50%;

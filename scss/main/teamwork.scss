@@ -12,7 +12,7 @@
         position: relative;
 
         &::after {
-            @include pseudo_elem(url('img/main/about/shapes/scroll\ bar.png'),515px,19px);
+            @include pseudo_elem(url('../img/main/about/shapes/scroll\ bar.png'),515px,19px);
                         
             bottom: -119px; 
             left: 50%;
