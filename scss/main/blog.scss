@@ -9,6 +9,7 @@
         bottom: 52px;
         @include transform(x, -50%);
     }
+    
 
     .blog__section__wrapper {
         @include padding(110px,30px,167px,30px);
